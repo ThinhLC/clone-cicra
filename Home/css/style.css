@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Text */
+.text-orange {
+    color: #FB743E;
+}
+
+.text-green {
+    color: #15A959;
+}
+
+.text-gray {
+    color: #797979;
+}
+
+.text-white {
+    color: white;
+}
+
+.font-w-400 {
+    font-weight: 400;
+}
+
+.font-w-500 {
+    font-weight: 500;
+}
+
+.font-w-600 {
+    font-weight: 500;
+}
+
+.font-w-700 {
+    font-weight: 500;
+}
+
+.icon-small {
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+/* Component */
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+
+/* Margin */
+.m-5 {
+    margin: 5px;
+}
+
+.m-l-5 {
+    margin-left: 5px;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+/* Margin */
+
+/* Padding */
+.p-3 {
+    padding: 3px !important;
+}
+
+.p-4 {
+    padding: 4px !important;
+}
+
+.p-5 {
+    padding: 5px !important;
+}
+
+.p-7 {
+    padding: 7px !important;
+}
+
+.p-8r {
+    padding: 8.5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-11 {
+    padding: 11px;
+}
+
+.p-12 {
+    padding: 12px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.p-16 {
+    padding: 16px;
+}
+
+.p-18 {
+    padding: 18px;
+}
+
+.p-l-5 {
+    padding-left: 5px;
+}
+
+.p-r-5 {
+    padding-right: 5px;
+}
+
+.p-l-10 {
+    padding-left: 10px;
+}
+
+.p-r-10 {
+    padding-right: 10px;
+}
+
+.p-r-40 {
+    padding-right: 40px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+.p-y-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.p-btn {
+    padding: 8px 12px;
+}
+
+/* Padding */
+
+/* Kich thuoc */
+.w-680 {
+    width: 680px;
+}
+
+.w-900 {
+    width: 900px;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-25 {
+    height: 25px;
+}
+
+.h-520 {
+    height: 520px;
+}
+
+/* Kich thuoc */
+.text-center {
+    text-align: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-orange {
+    background-color: #FB743E;
+}
+
+.bd-radius-25 {
+    border-radius: 25px;
+}
+
+.btn-item-header {
+    border: none;
+    height: 23px;
+}
+
+.border-none {
+    border: none;
+}
+
+
+.font-size-15 {
+    font-size: 15px !important;
+}
+
+.font-size-14 {
+    font-size: 14px !important;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Position */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
