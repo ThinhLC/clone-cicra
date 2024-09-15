@@ -6,203 +6,326 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleconfig.css">
- 
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="flex items-center justify-between container">
-            <div class="w-full items-center flex justify-between p-3">
-                <div class="font-size-15">
-                    <span class="text-gray ">Website</span>
-                    <span class="font-w-500 text-orange">Circa.vn</span>
-                    <span class="text-gray">thuộc sở hữu của</span>
-                    <span class="font-w-500 text-green">Tập đoàn Buymed</span>
+    <header class="text-sm border-b border-gray-50 shadow-sm shrink-0">
+        <div class="flex items-center justify-between gap-x-2 py-1.5 container">
+            <div class="w-full md:w-fit px-4 py-3 md:p-0 flex flex-wrap items-center justify-center bg-transparent">
+                <div class="flex flex-wrap items-center flex-1 gap-1 text-sm text-79">
+                    <span>Website</span><span class="font-medium text-primary">Circa.vn</span><span>thuộc sở hữu
+                        của</span>
+                    <div class="font-medium text-[#15A959]">Tập đoàn Buymed</div>
                 </div>
-                <span class="">
-                    <button class="items-center btn-item-header bg-white ">
-                        <i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="#FB743E" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="icon-small lucide lucide-phone ">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                </path>
-                            </svg></i>
-                        <span class="font-size-14 font-size-14">Tư vấn miễn phí:</span>
-                        <strong class="font-size-14 font-w-600 font-size-14">(028) 73022068</strong>
-                    </button>
-                    <label style="color:rgb(238, 238, 238)" for="">|</label>
-                    <button class="items-center btn-item-header bg-white">
-                        <i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="#FB743E" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-smartphone icon-small">
-                                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
-                                <path d="M12 18h.01"></path>
-                            </svg></i>
-                        <span class=" font-size-14">Tải ứng dụng</span>
-                    </button>
-                    <label style="color:rgb(238, 238, 238)" for="">|</label>
-                    <button class="items-center btn-item-header bg-white">
-                        <i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="#FB743E" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-store icon-small">
-                                <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path>
-                                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
-                                <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path>
-                                <path d="M2 7h20"></path>
-                                <path
-                                    d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7">
-                                </path>
-                            </svg></i>
-                        <span class=" font-size-14">Nhượng quyền</span>
-                    </button>
-                    <label style="color:rgb(238, 238, 238)" for="">|</label>
-                    <button class="items-center btn-item-header bg-white">
-                        <i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="#FB743E" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-briefcase icon-small">
-                                <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                            </svg></i>
-                        <span class=" font-size-14">Tuyển dụng</span>
-                    </button>
-                    <label style="color:rgb(238, 238, 238)" for="">|</label>
-                    <button class="items-center btn-item-header bg-white"></button>
-                    <i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            </div>
+            <span class="flex-1 flex items-center justify-end">
+                <button type="button"
+                    class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
+                    name="advise">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                             stroke="#FB743E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-headphones icon-small">
+                            class="lucide lucide-phone">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </i>
+                    <span class="whitespace-nowrap group-hover:text-primary transition">
+                        <div class="flex items-center gap-1"><span class="whitespace-nowrap">Tư vấn miễn
+                                phí</span><strong class="font-semibold">(028) 73022068</strong></div>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
+                    data-state="closed" name="qrCode">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="#FB743E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-smartphone">
+                            <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                            <path d="M12 18h.01"></path>
+                        </svg>
+                    </i>
+                    <span class="whitespace-nowrap group-hover:text-primary transition">Tải ứng dụng</span>
+                </button>
+                <a class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
+                    target="_blank" href="https://nhuongquyen.circa.vn/">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="#FB743E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-store">
+                            <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path>
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                            <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path>
+                            <path d="M2 7h20"></path>
+                            <path
+                                d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7">
+                            </path>
+                        </svg>
+                    </i>
+                    <span class="whitespace-nowrap group-hover:text-primary transition">Nhượng quyền</span>
+                </a>
+                <a class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
+                    target="_blank" href="https://career.buymed.com/">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="#FB743E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-briefcase">
+                            <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                        </svg>
+                    </i>
+                    <span class="whitespace-nowrap group-hover:text-primary transition">Tuyển dụng</span>
+                </a>
+                <a class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
+                    target="_blank" href="https://hotro.circa.vn/">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="#FB743E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-headphones">
                             <path
                                 d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3">
                             </path>
-                        </svg></i>
-                    <span class=" font-size-14">Hỗ trợ</span>
-                    </button>
-                </span>
-            </div>
+                        </svg>
+                    </i>
+                    <span class="whitespace-nowrap group-hover:text-primary transition">Hỗ trợ</span>
+                </a>
+            </span>
         </div>
-        <div class="bg-orange w-full menu">
-            <div class="container p-18 flex w-full items-center justify-between">
-                <svg width="120" height="30" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_831_6205)">
-                        <path
-                            d="M25.0104 7.01262C24.3649 7.01262 23.8077 6.7767 23.3419 6.30589C22.876 5.83508 22.6426 5.27298 22.6426 4.61959C22.6426 3.9662 22.876 3.40513 23.3419 2.93329C23.8077 2.46248 24.3639 2.22656 25.0104 2.22656C25.6569 2.22656 26.2121 2.46248 26.679 2.93329C27.1449 3.40513 27.3783 3.9662 27.3783 4.61959C27.3783 5.27298 27.1449 5.83508 26.679 6.30589C26.2121 6.77773 25.6569 7.01262 25.0104 7.01262Z"
-                            fill="#4BFA7A"></path>
-                        <path
-                            d="M14.8181 29.9513C10.8599 29.9513 7.13909 28.3932 4.33988 25.5653C1.54169 22.7363 0 18.976 0 14.9757C0 10.9753 1.54169 7.21499 4.33988 4.38602C7.13909 1.55808 10.8599 0 14.8181 0C15.7509 0 16.508 0.764169 16.508 1.70784C16.508 2.65151 15.7519 3.41568 14.8181 3.41568C8.51027 3.41568 3.37975 8.60177 3.37975 14.9757C3.37975 21.3495 8.51129 26.5356 14.8181 26.5356C21.125 26.5356 26.0697 21.5362 26.2514 15.3213C26.2545 15.2064 26.2565 13.8925 26.2565 13.7766C26.2565 12.8339 27.0126 12.0687 27.9464 12.0687C28.8801 12.0687 29.6362 12.8329 29.6362 13.7766C29.6362 13.8925 29.6352 15.2064 29.6322 15.3213C29.5459 19.1914 28.0144 22.8174 25.2964 25.5643C22.4972 28.3932 18.7764 29.9503 14.8181 29.9503V29.9513Z"
-                            fill="white"></path>
-                        <path
-                            d="M37.1743 29.6378C36.6465 29.6378 36.203 29.4562 35.8427 29.0921C35.4824 28.729 35.3027 28.2797 35.3027 27.7463V3.12777C35.3027 2.56978 35.4824 2.11538 35.8427 1.76355C36.202 1.41275 36.6465 1.23633 37.1743 1.23633C37.7021 1.23633 38.175 1.41275 38.5231 1.76355C38.8702 2.11538 39.0458 2.56978 39.0458 3.12777V27.7473C39.0458 28.2807 38.8713 28.729 38.5231 29.0931C38.175 29.4572 37.7254 29.6388 37.1743 29.6388V29.6378Z"
-                            fill="white"></path>
-                        <path
-                            d="M48.1118 29.6378C47.584 29.6378 47.1405 29.4562 46.7802 29.0921C46.4199 28.729 46.2402 28.2797 46.2402 27.7463V3.12777C46.2402 2.56978 46.4199 2.11538 46.7802 1.76355C47.1395 1.41275 47.584 1.23633 48.1118 1.23633H54.5891C56.3886 1.23633 57.9831 1.6179 59.3746 2.38207C60.765 3.14521 61.851 4.19453 62.6305 5.52798C63.41 6.86143 63.7997 8.41336 63.7997 10.1827C63.7997 11.8321 63.41 13.2979 62.6305 14.5831C61.851 15.8684 60.765 16.8746 59.3746 17.6019C57.9831 18.3291 56.3876 18.6932 54.5891 18.6932H49.9833V27.7484C49.9833 28.2818 49.8088 28.73 49.4606 29.0941C49.1125 29.4583 48.6629 29.6398 48.1118 29.6398V29.6378ZM49.9833 15.2006H54.5891C55.6924 15.2006 56.6637 14.9883 57.504 14.5636C58.3434 14.14 59.0031 13.5451 59.4832 12.7819C59.9622 12.0188 60.2028 11.1521 60.2028 10.1817C60.2028 9.11496 59.9622 8.17026 59.4832 7.34455C59.0031 6.52089 58.3434 5.87776 57.504 5.4172C56.6637 4.95665 55.6924 4.72689 54.5891 4.72689H49.9833V15.2006ZM63.0456 29.6378C62.7097 29.6378 62.4032 29.5649 62.1281 29.4193C61.852 29.2736 61.6176 29.0439 61.4268 28.729L54.9494 18.1824L58.5839 17.128L64.4848 26.7288C64.9172 27.4325 64.976 28.092 64.6644 28.7105C64.3518 29.329 63.8119 29.6378 63.0446 29.6378H63.0456Z"
-                            fill="white"></path>
-                        <path
-                            d="M81.577 30.0028C79.6333 30.0028 77.8166 29.6335 76.1257 28.8939C74.4348 28.1544 72.9591 27.1246 71.6996 25.8024C70.44 24.4813 69.4565 22.9355 68.7491 21.1661C68.0407 19.3967 67.6875 17.4806 67.6875 15.42C67.6875 13.3593 68.0407 11.4863 68.7491 9.72818C69.4565 7.9711 70.44 6.43148 71.6996 5.10931C72.9591 3.78817 74.4287 2.75218 76.1074 2.00032C77.7862 1.24949 79.61 0.873047 81.577 0.873047C83.4242 0.873047 85.0135 1.11614 86.3451 1.60029C87.6757 2.08546 89.0134 2.88553 90.3572 4.0005C90.549 4.14615 90.6992 4.29796 90.8068 4.4549C90.9144 4.61286 90.9865 4.7698 91.023 4.92776C91.0595 5.08572 91.0768 5.27343 91.0768 5.49088C91.0768 5.95144 90.9144 6.33403 90.5906 6.63662C90.2669 6.94024 89.8761 7.10949 89.4214 7.14539C88.9657 7.18231 88.5222 7.0305 88.0898 6.69099C87.2018 5.91554 86.2843 5.32164 85.3373 4.9093C84.3894 4.49695 83.1359 4.29078 81.577 4.29078C80.1611 4.29078 78.8295 4.58209 77.5832 5.16368C76.3358 5.74527 75.2376 6.54533 74.2907 7.56388C73.3427 8.58243 72.6049 9.76408 72.0771 11.1098C71.5493 12.4556 71.2855 13.8916 71.2855 15.4189C71.2855 16.9462 71.5493 18.4192 72.0771 19.7649C72.6049 21.1107 73.3417 22.2923 74.2907 23.3109C75.2376 24.3294 76.3358 25.1234 77.5832 25.6926C78.8305 26.2629 80.1611 26.5471 81.577 26.5471C82.8 26.5471 83.957 26.3347 85.0491 25.9111C86.1401 25.4875 87.1906 24.8987 88.1984 24.1469C88.6298 23.832 89.055 23.6925 89.4752 23.7284C89.8944 23.7653 90.2486 23.9345 90.5368 24.2382C90.8251 24.5418 90.9692 24.9603 90.9692 25.4926C90.9692 25.7357 90.9205 25.9716 90.8251 26.2014C90.7287 26.4322 90.5846 26.6445 90.3927 26.8384C89.0977 27.8815 87.7123 28.6693 86.2365 29.2027C84.7618 29.7361 83.208 30.0028 81.577 30.0028Z"
-                            fill="white"></path>
-                        <path
-                            d="M95.8259 29.6388C95.154 29.6388 94.6384 29.3475 94.2791 28.7659C93.9198 28.1843 93.8833 27.5658 94.1715 26.9114L104.282 2.50926C104.643 1.66098 105.229 1.23633 106.045 1.23633C106.909 1.23633 107.497 1.66098 107.808 2.50926L117.956 26.9832C118.22 27.6622 118.177 28.2736 117.83 28.8192C117.482 29.3649 116.96 29.6378 116.265 29.6378C115.904 29.6378 115.563 29.5352 115.239 29.329C114.915 29.1229 114.681 28.8377 114.537 28.4746L105.613 6.07367H106.621L97.5523 28.4746C97.3848 28.8623 97.1382 29.1536 96.8144 29.3475C96.4907 29.5414 96.1608 29.6388 95.8249 29.6388H95.8259ZM97.733 23.3839L99.1721 20.2564H113.278L114.717 23.3839H97.733Z"
-                            fill="white"></path>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_831_6205">
-                            <rect width="118.768" height="30" fill="white"></rect>
-                        </clipPath>
-                    </defs>
-                </svg>
-                <div class="bg-white p-l-10 p-r-40 bd-radius-25 items-center">
-                    <div class="flex justify-between items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="#FB743E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-search size-5 text-primary shrink-0 mr-2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.3-4.3"></path>
+        <div class="bg-primary w-full">
+            <div
+                class="grid grid-cols-[40px_1fr_40px] gap-x-9 content-center pt-1.5 pb-2 md:pt-4 md:pb-4 container md:grid-cols-[120px_1fr_340px]">
+                <!--$-->
+                <a href="index.html">
+                    <div class="mt-2">
+                        <svg width="120" height="30" viewBox="0 0 120 30" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_831_6205)">
+                                <path
+                                    d="M25.0104 7.01262C24.3649 7.01262 23.8077 6.7767 23.3419 6.30589C22.876 5.83508 22.6426 5.27298 22.6426 4.61959C22.6426 3.9662 22.876 3.40513 23.3419 2.93329C23.8077 2.46248 24.3639 2.22656 25.0104 2.22656C25.6569 2.22656 26.2121 2.46248 26.679 2.93329C27.1449 3.40513 27.3783 3.9662 27.3783 4.61959C27.3783 5.27298 27.1449 5.83508 26.679 6.30589C26.2121 6.77773 25.6569 7.01262 25.0104 7.01262Z"
+                                    fill="#4BFA7A"></path>
+                                <path
+                                    d="M14.8181 29.9513C10.8599 29.9513 7.13909 28.3932 4.33988 25.5653C1.54169 22.7363 0 18.976 0 14.9757C0 10.9753 1.54169 7.21499 4.33988 4.38602C7.13909 1.55808 10.8599 0 14.8181 0C15.7509 0 16.508 0.764169 16.508 1.70784C16.508 2.65151 15.7519 3.41568 14.8181 3.41568C8.51027 3.41568 3.37975 8.60177 3.37975 14.9757C3.37975 21.3495 8.51129 26.5356 14.8181 26.5356C21.125 26.5356 26.0697 21.5362 26.2514 15.3213C26.2545 15.2064 26.2565 13.8925 26.2565 13.7766C26.2565 12.8339 27.0126 12.0687 27.9464 12.0687C28.8801 12.0687 29.6362 12.8329 29.6362 13.7766C29.6362 13.8925 29.6352 15.2064 29.6322 15.3213C29.5459 19.1914 28.0144 22.8174 25.2964 25.5643C22.4972 28.3932 18.7764 29.9503 14.8181 29.9503V29.9513Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M37.1743 29.6378C36.6465 29.6378 36.203 29.4562 35.8427 29.0921C35.4824 28.729 35.3027 28.2797 35.3027 27.7463V3.12777C35.3027 2.56978 35.4824 2.11538 35.8427 1.76355C36.202 1.41275 36.6465 1.23633 37.1743 1.23633C37.7021 1.23633 38.175 1.41275 38.5231 1.76355C38.8702 2.11538 39.0458 2.56978 39.0458 3.12777V27.7473C39.0458 28.2807 38.8713 28.729 38.5231 29.0931C38.175 29.4572 37.7254 29.6388 37.1743 29.6388V29.6378Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M48.1118 29.6378C47.584 29.6378 47.1405 29.4562 46.7802 29.0921C46.4199 28.729 46.2402 28.2797 46.2402 27.7463V3.12777C46.2402 2.56978 46.4199 2.11538 46.7802 1.76355C47.1395 1.41275 47.584 1.23633 48.1118 1.23633H54.5891C56.3886 1.23633 57.9831 1.6179 59.3746 2.38207C60.765 3.14521 61.851 4.19453 62.6305 5.52798C63.41 6.86143 63.7997 8.41336 63.7997 10.1827C63.7997 11.8321 63.41 13.2979 62.6305 14.5831C61.851 15.8684 60.765 16.8746 59.3746 17.6019C57.9831 18.3291 56.3876 18.6932 54.5891 18.6932H49.9833V27.7484C49.9833 28.2818 49.8088 28.73 49.4606 29.0941C49.1125 29.4583 48.6629 29.6398 48.1118 29.6398V29.6378ZM49.9833 15.2006H54.5891C55.6924 15.2006 56.6637 14.9883 57.504 14.5636C58.3434 14.14 59.0031 13.5451 59.4832 12.7819C59.9622 12.0188 60.2028 11.1521 60.2028 10.1817C60.2028 9.11496 59.9622 8.17026 59.4832 7.34455C59.0031 6.52089 58.3434 5.87776 57.504 5.4172C56.6637 4.95665 55.6924 4.72689 54.5891 4.72689H49.9833V15.2006ZM63.0456 29.6378C62.7097 29.6378 62.4032 29.5649 62.1281 29.4193C61.852 29.2736 61.6176 29.0439 61.4268 28.729L54.9494 18.1824L58.5839 17.128L64.4848 26.7288C64.9172 27.4325 64.976 28.092 64.6644 28.7105C64.3518 29.329 63.8119 29.6378 63.0446 29.6378H63.0456Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M81.577 30.0028C79.6333 30.0028 77.8166 29.6335 76.1257 28.8939C74.4348 28.1544 72.9591 27.1246 71.6996 25.8024C70.44 24.4813 69.4565 22.9355 68.7491 21.1661C68.0407 19.3967 67.6875 17.4806 67.6875 15.42C67.6875 13.3593 68.0407 11.4863 68.7491 9.72818C69.4565 7.9711 70.44 6.43148 71.6996 5.10931C72.9591 3.78817 74.4287 2.75218 76.1074 2.00032C77.7862 1.24949 79.61 0.873047 81.577 0.873047C83.4242 0.873047 85.0135 1.11614 86.3451 1.60029C87.6757 2.08546 89.0134 2.88553 90.3572 4.0005C90.549 4.14615 90.6992 4.29796 90.8068 4.4549C90.9144 4.61286 90.9865 4.7698 91.023 4.92776C91.0595 5.08572 91.0768 5.27343 91.0768 5.49088C91.0768 5.95144 90.9144 6.33403 90.5906 6.63662C90.2669 6.94024 89.8761 7.10949 89.4214 7.14539C88.9657 7.18231 88.5222 7.0305 88.0898 6.69099C87.2018 5.91554 86.2843 5.32164 85.3373 4.9093C84.3894 4.49695 83.1359 4.29078 81.577 4.29078C80.1611 4.29078 78.8295 4.58209 77.5832 5.16368C76.3358 5.74527 75.2376 6.54533 74.2907 7.56388C73.3427 8.58243 72.6049 9.76408 72.0771 11.1098C71.5493 12.4556 71.2855 13.8916 71.2855 15.4189C71.2855 16.9462 71.5493 18.4192 72.0771 19.7649C72.6049 21.1107 73.3417 22.2923 74.2907 23.3109C75.2376 24.3294 76.3358 25.1234 77.5832 25.6926C78.8305 26.2629 80.1611 26.5471 81.577 26.5471C82.8 26.5471 83.957 26.3347 85.0491 25.9111C86.1401 25.4875 87.1906 24.8987 88.1984 24.1469C88.6298 23.832 89.055 23.6925 89.4752 23.7284C89.8944 23.7653 90.2486 23.9345 90.5368 24.2382C90.8251 24.5418 90.9692 24.9603 90.9692 25.4926C90.9692 25.7357 90.9205 25.9716 90.8251 26.2014C90.7287 26.4322 90.5846 26.6445 90.3927 26.8384C89.0977 27.8815 87.7123 28.6693 86.2365 29.2027C84.7618 29.7361 83.208 30.0028 81.577 30.0028Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M95.8259 29.6388C95.154 29.6388 94.6384 29.3475 94.2791 28.7659C93.9198 28.1843 93.8833 27.5658 94.1715 26.9114L104.282 2.50926C104.643 1.66098 105.229 1.23633 106.045 1.23633C106.909 1.23633 107.497 1.66098 107.808 2.50926L117.956 26.9832C118.22 27.6622 118.177 28.2736 117.83 28.8192C117.482 29.3649 116.96 29.6378 116.265 29.6378C115.904 29.6378 115.563 29.5352 115.239 29.329C114.915 29.1229 114.681 28.8377 114.537 28.4746L105.613 6.07367H106.621L97.5523 28.4746C97.3848 28.8623 97.1382 29.1536 96.8144 29.3475C96.4907 29.5414 96.1608 29.6388 95.8249 29.6388H95.8259ZM97.733 23.3839L99.1721 20.2564H113.278L114.717 23.3839H97.733Z"
+                                    fill="white"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_831_6205">
+                                    <rect width="118.768" height="30" fill="white"></rect>
+                                </clipPath>
+                            </defs>
                         </svg>
-
-                        <input type="text" class="font-size-15 p-11 w-680 border-none m-l-5"
-                            placeholder="Tìm kiếm tên thuốc, công dụng, thực phẩm chức năng..">
                     </div>
+                </a>
+                <div class="space-y-2">
+                    <!--$-->
+                    <div cmdk-root="">
+                        <label cmdk-label="" for=":RcollaH2:" id=":RcollaH1:"
+                            style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;"></label>
+                        <div>
+                            <div class="flex items-center border-b px-3 bg-white rounded-full" cmdk-input-wrapper="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-search size-5 text-primary shrink-0 mr-2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.3-4.3"></path>
+                                </svg>
+                                <input
+                                    class="flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
+                                    placeholder="Tìm kiếm tên thuốc, công dụng, thực phẩm chức năng.." cmdk-input=""
+                                    autocomplete="off" autocorrect="off" spellcheck="false" aria-autocomplete="list"
+                                    role="combobox" aria-expanded="true" aria-controls=":Rcolla:"
+                                    aria-labelledby=":RcollaH1:" id=":RcollaH2:" type="text" value="" />
+                            </div>
+                        </div>
+                        <div class="relative mt-1"></div>
+                    </div>
+                    <!--/$-->
                 </div>
-                <div class="items-center ">
-                    <button class="bg-white bd-radius-25 p-btn border-none justify-between">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="#FB743E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-shopping-cart icon-small">
-                            <circle cx="8" cy="21" r="1"></circle>
-                            <circle cx="19" cy="21" r="1"></circle>
-                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
-                            </path>
-                        </svg>
-                        <span class="font-size-15 text-orange font-w-500">Giỏ hàng</span>
+                <!--/$-->
+                <div class="h-fit flex items-center mb-auto gap-x-0.5 justify-around">
+                    <button type="button" aria-label="cart-button"
+                        class="bg-white transition py-2 px-3 h-10 max-w-36 rounded-full flex items-center justify-between gap-2 hover:bg-orange-1"
+                        data-state="closed">
+                        <i class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="#FB743E" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-shopping-cart">
+                                <circle cx="8" cy="21" r="1"></circle>
+                                <circle cx="19" cy="21" r="1"></circle>
+                                <path
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                                </path>
+                            </svg>
+                        </i>
+                        <span class="text-primary font-medium">Giỏ hàng</span>
                     </button>
-                    <button class="bg-orange bd-radius-25 p-btn border-none justify-between m-l-5">
+                    <div data-orientation="vertical" role="none" class="shrink-0 bg-border w-[1px] h-6 my-1"
+                        color="white"></div>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed underline-offset-4 h-10 py-2 hover:underline text-white space-x-1.5 px-0"
+                        aria-label="button" type="button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-pen icon-small">
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-pen">
                             <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path>
                         </svg>
-                        <span class="font-size-15 text-white font-w-500">Đăng ký</span>
+                        <span>Đăng ký</span>
                     </button>
-                    <button class="bg-orange bd-radius-25 p-btn border-none justify-between">
+                    <div data-orientation="vertical" role="none" class="shrink-0 bg-border w-[1px] h-6 my-1"
+                        color="white"></div>
+                    <button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed underline-offset-4 h-10 py-2 hover:underline text-white space-x-1.5 px-0"
+                        aria-label="button" type="button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
-                            stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-user-round icon-small">
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-user-round">
                             <circle cx="12" cy="8" r="5"></circle>
                             <path d="M20 21a8 8 0 0 0-16 0"></path>
                         </svg>
-                        <span class="font-size-15 text-white font-w-500">Đăng nhập</span>
+                        <span>Đăng nhập</span>
                     </button>
-
                 </div>
             </div>
-
-
         </div>
-        <div class="container p-7">
-            <div class="bg-white">
-                <button class="bg-white border-none font-size-15 text-gray font-w-500">Danh sách sản phẩm</button>
-                <button class="bg-white border-none font-size-15 text-gray font-w-500">Hệ thống nhà thuốc</button>
-            </div>
 
+        <div class="container">
+            <nav aria-label="Main" data-orientation="horizontal" dir="ltr"
+                class="relative z-10 flex max-w-max flex-1 items-center justify-center">
+                <div style="position: relative;">
+                    <ul data-orientation="horizontal"
+                        class="group flex flex-1 list-none items-center justify-center space-x-1 gap-x-5" dir="ltr">
+                        <li class="">
+                            <a href="/danh-sach-san-pham">
+                                <button id="radix-:Rclla:-trigger-radix-:Rlslla:" data-state="closed"
+                                    aria-expanded="false" aria-controls="radix-:Rclla:-content-radix-:Rlslla:"
+                                    class="group inline-flex h-10 w-max items-center justify-center bg-background py-2 text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50 group hover:text-primary hover:border-primary rounded-none HideNavigationIconTrigger text-grey-9"
+                                    data-radix-collection-item="">
+                                    Danh sách sản phẩm<!-- -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-chevron-down relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
+                                        aria-hidden="true">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="/he-thong-nha-thuoc">
+                                <button id="radix-:Rclla:-trigger-radix-:R15slla:" data-state="closed"
+                                    aria-expanded="false" aria-controls="radix-:Rclla:-content-radix-:R15slla:"
+                                    class="group inline-flex h-10 w-max items-center justify-center bg-background py-2 text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50 group hover:text-primary hover:border-primary rounded-none HideNavigationIconTrigger text-grey-9"
+                                    data-radix-collection-item="">
+                                    Hệ thống nhà thuốc<!-- -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-chevron-down relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
+                                        aria-hidden="true">
+                                        <path d="m6 9 6 6 6-6"></path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="absolute left-0 top-full flex justify-center"></div>
+                <div class="absolute left-0 top-full flex justify-center"></div>
+            </nav>
         </div>
     </header>
 
-    <section class="section-1 relative h-520 flex">
-        <img src="../img/home-banner-bg.png" alt="" class="absolute w-full">
-        <div class="container p-y-40">
-            <div class="row items-center relative">
-                <div class="banner-1 relative">
-                    <div class="w-full relative">
-                        <img src="../img/94f3c0bd-0b3d-4d9a-a3b8-7ff7a5f7081c.jpg" class="absolute w-full" alt="">
+    <section class="w-full relative h-[32.4375rem] py-10">
+        <img alt="Home Banner" fetchpriority="high" decoding="async" data-nimg="fill" class=""
+            style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent;"
+            src="../img/home-banner-bg.png" />
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 container">
+            <div class="flex items-stretch justify-between gap-x-3">
+                <div class="md:w-[900px] md:basis-[900px] shrink-0">
+                    <div
+                        class="swiper swiper-initialized swiper-horizontal overflow-hidden rounded-xl relative border-[4px] border-white shadow-md bg-white group">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-active swiper-slide-next" data-swiper-slide-index="0"
+                                style="width: 892px;">
+                                <a href="index.html">
+                                    <div class="bg-white relative w-[900px] h-[300px] overflow-hidden rounded-xl">
+                                        <img alt="" fetchpriority="high" loading="eager" decoding="async"
+                                            data-nimg="fill" class="object-cover"
+                                            style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent;"
+                                            src="https://cdn-gcs.thuocsi.vn/circa-image/banner/94f3c0bd-0b3d-4d9a-a3b8-7ff7a5f7081c" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock">
+                            <span
+                                class="swiper-pagination-bullet !bg-white !size-2 !opacity-90 swiper-pagination-bullet-active !w-5 !h-2 !rounded-sm"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="banner-2 relative">
-                    <div class="w-full relative">
-                        <img src="../img/connect-banner.png" class="absolute w-full" alt="">
-                    </div>
+                <div class="flex-1 relative border-[4px] border-white rounded-xl shadow-md">
+                    <img alt="Banner" fetchpriority="high" decoding="async" data-nimg="fill"
+                        class="object-cover rounded-xl"
+                        style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent;"
+                        src="../img/connect-banner.png" />
                 </div>
             </div>
-
-            <!-- <div class="relative m-t-10 bg-white p-12 bd-radius-25">
-                <div class="flex ">
-                    <span class="col-md-7">
-                        <svg width="34" height="40" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M27.39 3.7278C25.5037 2.18337 23.2983 1.0768 20.9326 0.487898C18.567 -0.101 16.1001 -0.157544 13.71 0.322344C10.6367 0.952417 7.80939 2.45262 5.56473 4.64425C3.32008 6.83588 1.75273 9.62656 1.04938 12.6838C0.346033 15.7411 0.536339 18.9362 1.59763 21.8884C2.65892 24.8405 4.54646 27.4254 7.0354 29.3351C9.8771 31.415 12.2966 34.0171 14.1645 37.0024L15.4372 39.1188C15.5989 39.3876 15.8273 39.61 16.1004 39.7644C16.3734 39.9188 16.6817 40 16.9954 40C17.3091 40 17.6174 39.9188 17.8905 39.7644C18.1635 39.61 18.392 39.3876 18.5536 39.1188L19.7736 37.086C21.4002 34.2267 23.618 31.7473 26.2791 29.8133C28.3656 28.3777 30.09 26.4769 31.3162 24.2608C32.5424 22.0447 33.2369 19.574 33.3448 17.0436C33.4527 14.5132 32.9711 11.9923 31.938 9.67987C30.9049 7.36744 29.3486 5.32672 27.3918 3.71871L27.39 3.7278ZM16.9936 23.6387C15.5552 23.6387 14.1491 23.2122 12.9531 22.4131C11.7571 21.6139 10.8249 20.4781 10.2745 19.1492C9.72401 17.8202 9.57998 16.3579 9.8606 14.9472C10.1412 13.5364 10.8339 12.2405 11.851 11.2234C12.8681 10.2063 14.164 9.51363 15.5748 9.23301C16.9855 8.95239 18.4478 9.09641 19.7768 9.64687C21.1057 10.1973 22.2415 11.1295 23.0407 12.3255C23.8398 13.5215 24.2663 14.9276 24.2663 16.366C24.2663 18.2948 23.5001 20.1447 22.1362 21.5086C20.7723 22.8725 18.9224 23.6387 16.9936 23.6387Z"
-                                fill="#3652AD"></path>
-                        </svg>
-                        <div class="text-center">Nhà thuốc gần đây</div>
-                    </span>
-                    <span class="col-md-7">
-                        <svg width="34" height="40" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M27.39 3.7278C25.5037 2.18337 23.2983 1.0768 20.9326 0.487898C18.567 -0.101 16.1001 -0.157544 13.71 0.322344C10.6367 0.952417 7.80939 2.45262 5.56473 4.64425C3.32008 6.83588 1.75273 9.62656 1.04938 12.6838C0.346033 15.7411 0.536339 18.9362 1.59763 21.8884C2.65892 24.8405 4.54646 27.4254 7.0354 29.3351C9.8771 31.415 12.2966 34.0171 14.1645 37.0024L15.4372 39.1188C15.5989 39.3876 15.8273 39.61 16.1004 39.7644C16.3734 39.9188 16.6817 40 16.9954 40C17.3091 40 17.6174 39.9188 17.8905 39.7644C18.1635 39.61 18.392 39.3876 18.5536 39.1188L19.7736 37.086C21.4002 34.2267 23.618 31.7473 26.2791 29.8133C28.3656 28.3777 30.09 26.4769 31.3162 24.2608C32.5424 22.0447 33.2369 19.574 33.3448 17.0436C33.4527 14.5132 32.9711 11.9923 31.938 9.67987C30.9049 7.36744 29.3486 5.32672 27.3918 3.71871L27.39 3.7278ZM16.9936 23.6387C15.5552 23.6387 14.1491 23.2122 12.9531 22.4131C11.7571 21.6139 10.8249 20.4781 10.2745 19.1492C9.72401 17.8202 9.57998 16.3579 9.8606 14.9472C10.1412 13.5364 10.8339 12.2405 11.851 11.2234C12.8681 10.2063 14.164 9.51363 15.5748 9.23301C16.9855 8.95239 18.4478 9.09641 19.7768 9.64687C21.1057 10.1973 22.2415 11.1295 23.0407 12.3255C23.8398 13.5215 24.2663 14.9276 24.2663 16.366C24.2663 18.2948 23.5001 20.1447 22.1362 21.5086C20.7723 22.8725 18.9224 23.6387 16.9936 23.6387Z"
-                                fill="#3652AD"></path>
-                        </svg>
-                        <div class="text-center">Nhà thuốc gần đây</div>
-                    </span>
+            <div class="mt-5 rounded-xl container bg-white p-3 shadow-md flex justify-between z-10">
+                <div class="flex-1">
+                    <a href="/he-thong-nha-thuoc">
+                        <div class="p-3 grid place-items-center hover:bg-blue-0 transition rounded-xl space-y-2">
+                            <div class="">
+                                <svg width="34" height="40" viewBox="0 0 34 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M27.39 3.7278C25.5037 2.18337 23.2983 1.0768 20.9326 0.487898C18.567 -0.101 16.1001 -0.157544 13.71 0.322344C10.6367 0.952417 7.80939 2.45262 5.56473 4.64425C3.32008 6.83588 1.75273 9.62656 1.04938 12.6838C0.346033 15.7411 0.536339 18.9362 1.59763 21.8884C2.65892 24.8405 4.54646 27.4254 7.0354 29.3351C9.8771 31.415 12.2966 34.0171 14.1645 37.0024L15.4372 39.1188C15.5989 39.3876 15.8273 39.61 16.1004 39.7644C16.3734 39.9188 16.6817 40 16.9954 40C17.3091 40 17.6174 39.9188 17.8905 39.7644C18.1635 39.61 18.392 39.3876 18.5536 39.1188L19.7736 37.086C21.4002 34.2267 23.618 31.7473 26.2791 29.8133C28.3656 28.3777 30.09 26.4769 31.3162 24.2608C32.5424 22.0447 33.2369 19.574 33.3448 17.0436C33.4527 14.5132 32.9711 11.9923 31.938 9.67987C30.9049 7.36744 29.3486 5.32672 27.3918 3.71871L27.39 3.7278ZM16.9936 23.6387C15.5552 23.6387 14.1491 23.2122 12.9531 22.4131C11.7571 21.6139 10.8249 20.4781 10.2745 19.1492C9.72401 17.8202 9.57998 16.3579 9.8606 14.9472C10.1412 13.5364 10.8339 12.2405 11.851 11.2234C12.8681 10.2063 14.164 9.51363 15.5748 9.23301C16.9855 8.95239 18.4478 9.09641 19.7768 9.64687C21.1057 10.1973 22.2415 11.1295 23.0407 12.3255C23.8398 13.5215 24.2663 14.9276 24.2663 16.366C24.2663 18.2948 23.5001 20.1447 22.1362 21.5086C20.7723 22.8725 18.9224 23.6387 16.9936 23.6387Z"
+                                        fill="#3652AD"></path>
+                                </svg>
+                            </div>
+                            <div class="text-link">Nhà thuốc gần đây</div>
+                        </div>
+                    </a>
                 </div>
-            </div> -->
+                <div class="flex-1">
+                    <a href="/tra-cuu-don-hang">
+                        <div class="p-3 grid place-items-center hover:bg-blue-0 transition rounded-xl space-y-2">
+                            <div class="">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.5304 1.12383C31.1295 0.430625 30.383 0 29.5828 0H21.2188V9.89352H36.6026L31.5304 1.12383Z"
+                                        fill="#3652AD"></path>
+                                    <path
+                                        d="M18.8675 0H10.4245C9.62266 0 8.87633 0.431406 8.47539 1.12617L3.42188 9.89352H18.8674V0H18.8675Z"
+                                        fill="#3652AD"></path>
+                                    <path
+                                        d="M2.58594 12.2383V37.2437C2.58594 38.7638 3.82312 40.0002 5.3432 40.0002H34.6635C36.1836 40.0002 37.4208 38.7638 37.4208 37.2437V12.2383H2.58594ZM25.3248 22.7539L19.2616 28.8171C19.0327 29.0461 18.7325 29.161 18.4324 29.161C18.1323 29.161 17.8322 29.0461 17.604 28.8171L14.7616 25.9754C14.3044 25.5182 14.3044 24.7757 14.7616 24.3177C15.2195 23.8598 15.962 23.8598 16.42 24.3177L18.4325 26.331L23.6673 21.0963C24.1252 20.6383 24.8677 20.6383 25.3249 21.0963C25.7829 21.5542 25.7829 22.2959 25.3248 22.7539Z"
+                                        fill="#3652AD"></path>
+                                </svg>
+                            </div>
+                            <div class="text-link">Tra cứu đơn hàng</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
