@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hướng Dẫn Tạo Tài Khoản</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/clone-cicra/Home/css/session3.css">
+ 
+</head>
+<body>
+  <section class="py-5 bg-gray-100">
+    <div class="container d-flex gap-4">
+      <!-- Cột bên trái: Điều hướng các bước -->
+      <div class="col-md-4">
+        <div class="tab-container bg-white rounded-full shadow p-2 h-12">
+          <!-- Tab điều hướng -->
+          <button type="button" role="tab" aria-selected="true" aria-controls="content-account" id="trigger-account" class="tab-button active" tabindex="-1">
+            Các bước tạo tài khoản
+          </button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="content-order" id="trigger-order" class="tab-button inactive" tabindex="-1">
+            Các bước tạo Đơn hàng
+          </button>
+        </div>
+
+        <div class="tab-content mt-4" id="myTabContent">
+          <!-- Các bước tạo tài khoản -->
+          <div class="tab-pane fade show active" id="content-account" role="tabpanel" aria-labelledby="trigger-account">
+            <div class="bg-white rounded-lg shadow p-4">
+              <div class="d-flex flex-column gap-3">
+                <!-- Bước 1 -->
+                <div class="d-flex align-items-center">
+                  <button type="button" class="step-button active" data-step="1">
+                    <div class="inner-circle"></div>
+                  </button>
+                  <div class="step-connector active mx-2"></div>
+                  <div>
+                    <h5 class="mb-0">Bước 1</h5>
+                    <p class="mb-0 text-muted">Tải ứng dụng</p>
+                  </div>
+                </div>
+
+                <!-- Bước 2 -->
+                <div class="d-flex align-items-center">
+                  <button type="button" class="step-button" data-step="2">
+                    <div class="inner-circle"></div>
+                  </button>
+                  <div class="step-connector mx-2"></div>
+                  <div>
+                    <h5 class="mb-0">Bước 2</h5>
+                    <p class="mb-0 text-muted">Nhấp chọn Đăng ký</p>
+                  </div>
+                </div>
+
+                <!-- Bước 3 -->
+                <div class="d-flex align-items-center">
+                  <button type="button" class="step-button" data-step="3">
+                    <div class="inner-circle"></div>
+                  </button>
+                  <div class="step-connector mx-2"></div>
+                  <div>
+                    <h5 class="mb-0">Bước 3</h5>
+                    <p class="mb-0 text-muted">Nhập mã xác nhận</p>
+                  </div>
+                </div>
+
+                <!-- Bước 4 -->
+                <div class="d-flex align-items-center">
+                  <button type="button" class="step-button" data-step="4">
+                    <div class="inner-circle"></div>
+                  </button>
+                  <div class="step-connector mx-2"></div>
+                  <div>
+                    <h5 class="mb-0">Bước 4</h5>
+                    <p class="mb-0 text-muted">Nhận ưu đãi đơn đầu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Các bước tạo đơn hàng -->
+          <div class="tab-pane fade" id="content-order" role="tabpanel" aria-labelledby="trigger-order">
+            <div class="bg-white rounded-lg shadow p-4">
+              <div class="d-flex flex-column gap-3">
+                <!-- Bước 1 -->
+                <div class="d-flex align-items-center">
+                  <button type="button" class="step-button" data-step="1">
+                    <div class="inner-circle"></div>
+                  </button>
+                  <div class="step-connector mx-2"></div>
+                  <div>
+                    <h5 class="mb-0">Bước 1</h5>
+                    <p class="mb-0 text-muted">Chọn sản phẩm</p>
+                  </div>
+                </div>
+
+                <!-- Bước 2 -->
+                <div class="d-flex align-items-center">
+                  <button type="button" class="step-button" data-step="2">
+                    <div class="inner-circle"></div>
+                  </button>
+                  <div class="step-connector mx-2"></div>
+                  <div>
+                    <h5 class="mb-0">Bước 2</h5>
+                    <p class="mb-0 text-muted">Thêm vào giỏ hàng</p>
+                  </div>
+                </div>
+
+                <!-- Bước 3 -->
+                <div class="d-flex align-items-center">
+                  <button type="button" class="step-button" data-step="3">
+                    <div class="inner-circle"></div>
+                  </button>
+                  <div class="step-connector mx-2"></div>
+                  <div>
+                    <h5 class="mb-0">Bước 3</h5>
+                    <p class="mb-0 text-muted">Nhập thông tin giao hàng</p>
+                  </div>
+                </div>
+
+                <!-- Bước 4 -->
+                <div class="d-flex align-items-center">
+                  <button type="button" class="step-button" data-step="4">
+                    <div class="inner-circle"></div>
+                  </button>
+                  <div class="step-connector mx-2"></div>
+                  <div>
+                    <h5 class="mb-0">Bước 4</h5>
+                    <p class="mb-0 text-muted">Xác nhận đơn hàng</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cột bên phải: Hình ảnh và nội dung mô tả -->
+      <div class="col-md-8 position-relative">
+        <img id="step-image" src="/clone-cicra/Home/img/account-step-1.png" alt="Tải ứng dụng" class="w-100 h-100 object-cover rounded-xl">
+        <div id="info-overlay" class="position-absolute top-50 start-50 translate-middle text-center text-dark hidden">
+          <h4 id="step-title" class="text-primary mb-3">Bước 1</h4>
+          <p id="step-description">Tìm kiếm <span class="fw-bold">Nhà thuốc Circa by Buymed</span> trên <span class="fw-bold">CH Play</span> hoặc <span class="fw-bold">App Store</span> để tải xuống</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS, Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+  <script>
+    // Các sự kiện và cập nhật bước
+    document.querySelectorAll('.tab-button').forEach((tabButton) => {
+      tabButton.addEventListener('click', () => {
+        const targetId = tabButton.getAttribute('aria-controls');
+
+        // Xóa trạng thái active cho tất cả các tab
+        document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('show', 'active'));
+
+        // Thêm trạng thái active cho tab hiện tại
+        tabButton.classList.add('active');
+        document.getElementById(targetId).classList.add('show', 'active');
+
+        // Cập nhật trạng thái cho các bước trong tab hiện tại
+        updateSteps(targetId);
+      });
+    });
+
+    function updateSteps(tabId) {
+      const steps = document.querySelectorAll(`#${tabId} .step-button`);
+      const stepInfo = {
+        account: {
+          1: {
+            image: '/clone-cicra/Home/img/account-step-1.png',
+            title: 'Bước 1',
+            description: 'Tìm kiếm <span class="fw-bold">Nhà thuốc Circa by Buymed</span> trên <span class="fw-bold">CH Play</span> hoặc <span class="fw-bold">App Store</span> để tải xuống'
+          },
+          2: {
+            image: '/clone-cicra/Home/img/account-step-2.png',
+            title: 'Bước 2',
+            description: 'Nhấp chọn Đăng ký và điền thông tin yêu cầu.'
+          },
+          3: {
+            image: '/clone-cicra/Home/img/account-step-3.png',
+            title: 'Bước 3',
+            description: 'Nhập mã xác nhận được gửi đến điện thoại của bạn.'
+          },
+          4: {
+            image: '/clone-cicra/Home/img/account-step-4.png',
+            title: 'Bước 4',
+            description: 'Nhận ưu đãi đơn đầu và hoàn tất đăng ký.'
+          }
+        },
+        order: {
+          1: {
+            image: '/clone-cicra/Home/img/order-step-1.png',
+            title: 'Bước 1',
+            description: 'Chọn sản phẩm bạn muốn mua.'
+          },
+          2: {
+            image: '/clone-cicra/Home/img/order-step-2.png',
+            title: 'Bước 2',
+            description: 'Thêm sản phẩm vào giỏ hàng.'
+          },
+          3: {
+            image: '/clone-cicra/Home/img/order-step-3.png',
+            title: 'Bước 3',
+            description: 'Nhập thông tin giao hàng của bạn.'
+          },
+          4: {
+            image: '/clone-cicra/Home/img/order-step-4.png',
+            title: 'Bước 4',
+            description: 'Xác nhận đơn hàng và hoàn tất quá trình mua hàng.'
+          }
+        }
+      };
+
+      steps.forEach((step, index) => {
+        step.addEventListener('click', () => {
+          const stepType = tabId === 'content-account' ? 'account' : 'order';
+          const stepData = stepInfo[stepType][step.getAttribute('data-step')];
+          document.getElementById('step-image').src = stepData.image;
+          document.getElementById('step-title').innerHTML = stepData.title;
+          document.getElementById('step-description').innerHTML = stepData.description;
+          document.getElementById('info-overlay').classList.add('visible');
+          
+          // Cập nhật trạng thái các bước
+          steps.forEach((s, i) => {
+            if (i <= index) {
+              s.classList.add('completed');
+            } else {
+              s.classList.remove('completed');
+            }
+          });
+
+          steps.forEach(s => s.classList.remove('active'));
+          step.classList.add('active');
+        });
+
+        step.addEventListener('mouseenter', () => {
+          steps.forEach((s, i) => {
+            if (i <= index) {
+              s.classList.add('completed');
+            }
+          });
+        });
+
+        step.addEventListener('mouseleave', () => {
+          steps.forEach((s, i) => {
+            if (!s.classList.contains('active')) {
+              s.classList.remove('completed');
+            }
+          });
+        });
+      });
+    }
+
+    // Cập nhật các bước khi trang được tải lần đầu
+    document.querySelector('.tab-button.active').click();
+
+  </script>
+</body>
+</html>

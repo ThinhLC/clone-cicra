@@ -1,0 +1,452 @@
+/* Đặt màu nền cho section */
+section.py-5.bg-gray-100 {
+    background-color: #f8f9fa; /* Màu xám nhạt */
+  }
+  
+  /* Tab điều hướng */
+  .tab-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    height: 48px; /* Tương ứng với height-12 */
+  }
+  
+  .tab-button {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tab-button.active {
+    background-color: #007bff; /* Màu xanh của Bootstrap */
+    color: #ffffff;
+  }
+  
+  .tab-button.inactive {
+    background-color: #ffffff;
+    color: #6c757d; /* Màu xám của Bootstrap */
+  }
+  
+  /* Các bước hướng dẫn */
+  .step-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .step-button.active {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .step-button .inner-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+  
+  .step-button.active .inner-circle {
+    background-color: #ffffff;
+  }
+  
+  .step-connector {
+    width: 2px;
+    background-color: #007bff;
+  }
+  
+  .step-connector.active {
+    background-color: #007bff;
+  }
+  
+  /* Nội dung mô tả */
+  .position-relative {
+    position: relative;
+  }
+  
+  .position-absolute {
+    position: absolute;
+  }
+  
+  .object-cover {
+    object-fit: cover;
+  }
+  
+  .rounded-xl {
+    border-radius: 0.75rem; /* 12px */
+  }
+  
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .bg-primary {
+    background-color: #007bff;
+  }
+  
+  .text-dark {
+    color: #343a40; /* Màu xám đậm */
+  }
+  
+  .text-muted {
+    color: #6c757d;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-gray-500 {
+    color: #6c757d;
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .p-4 {
+    padding: 1.5rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .gap-3 {
+    gap: 1rem;
+  }
+  
+  .gap-x-4 {
+    gap: 1.5rem;
+  }
+  
+  .mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .text-muted {
+    color: #6c757d;
+  }
+  
+  .font-medium {
+    font-weight: 500;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .text-79 {
+    color: #495057; /* Màu xám đậm */
+  }
+  
+  .border-b {
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .border-gray-300 {
+    border-color: #dee2e6;
+  }
+  
+  /* CSS cho các nút bước */
+.step-button {
+  position: relative;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  z-index: 1;
+}
+
+.step-button.active,
+.step-button.completed {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+/* Đường nối giữa các bước (vertical connector) */
+.step-connector {
+  position: relative;
+  width: 2px;
+  height: 50px;
+  background-color: #ddd;
+  margin-left: 14px; /* Để căn giữa với các nút bước */
+  transition: background-color 0.3s ease;
+  z-index: 0;
+}
+
+.step-connector.completed {
+  background-color: #0d6efd;
+}
+
+/* Khi một bước được active hoặc completed */
+.step-button.active ~ .step-button,
+.step-button.active ~ .step-connector,
+.step-button.completed ~ .step-button,
+.step-button.completed ~ .step-connector {
+  background-color: #ddd;
+  border-color: #ddd;
+}
+
+/* Khi bước active hoặc được hover, các bước trước đó sẽ sáng */
+.step-button.active::after,
+.step-button.completed::after,
+.step-button::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  background-color: #ddd;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  transition: background-color 0.3s ease;
+}
+
+.step-button.completed::after {
+  background-color: #0d6efd;
+}
+
+/* Loại bỏ đường nối cho bước cuối cùng */
+.step-button:last-child::after {
+  display: none;
+}
+
+/* Hiệu ứng hover */
+.step-button:hover,
+.step-button:focus {
+  cursor: pointer;
+}
+
+/* Khi hover qua các bước, các bước trước đó sẽ sáng */
+.step-button:hover ~ .step-button.completed,
+.step-button:hover ~ .step-connector.completed,
+.step-button:hover ~ .step-button,
+.step-button:hover ~ .step-connector {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.step-button:hover ~ .step-button::after,
+.step-button:hover ~ .step-connector::after {
+  background-color: #0d6efd;
+}
+/* Cài đặt chung cho các bước */
+.step-button {
+  position: relative;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.step-connector {
+  position: relative;
+  width: 2px;
+  height: 50px;
+  background-color: #ddd;
+  margin-left: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Đảm bảo các bước chỉ hiển thị khi tab tương ứng được chọn */
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.step-button.active,
+.step-button.completed {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+.step-connector.completed {
+  background-color: #0d6efd;
+}
+
+/* Hiệu ứng hover cho các bước */
+.step-button:hover,
+.step-button.active {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+/* Định dạng cho các tab */
+.tab-container {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab-button {
+  flex: 1;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+
+.tab-button:not(.active):hover {
+  background-color: #e9ecef;
+}
+
+/* Định dạng cho phần hình ảnh bên phải */
+.position-relative {
+  position: relative;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.text-primary {
+  color: #0d6efd;
+}
+
+.text-dark {
+  color: #343a40;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.bg-gray-100 {
+  background-color: #f8f9fa;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.top-50 {
+  top: 50%;
+}
+
+.start-50 {
+  left: 50%;
+}
+
+.translate-middle {
+  transform: translate(-50%, -50%);
+}
+
+/* Ẩn và hiện phần tử */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
