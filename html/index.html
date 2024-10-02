@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleconfig.css">
     <link rel="stylesheet" href="../css/configBonus.css">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<!-- link cdn phuong them vào -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <!-- link cdn phuong them vào -->
     <title>Document</title>
 </head>
 
@@ -18,15 +18,20 @@
 
     <!-- Header Quan -->
     <header class="text-sm border-b border-gray-50 shadow-sm shrink-0">
-        <div class="flex items-center justify-between gap-x-2 py-1.5 container">
-            <div class="w-full md:w-fit px-4 py-3 md:p-0 flex flex-wrap items-center justify-center bg-transparent">
+        <div class="flex flex-wrap items-center justify-between gap-x-2 py-1.5 container mx-auto">
+
+            <div
+                class="hidden md:flex w-full md:w-fit px-4 py-3 md:p-0 flex flex-wrap items-center justify-center bg-transparent">
                 <div class="flex flex-wrap items-center flex-1 gap-1 text-sm text-79">
-                    <span>Website</span><span class="font-medium text-primary">Circa.vn</span><span>thuộc sở hữu
-                        của</span>
+                    <span>Website</span>
+                    <span class="font-medium text-primary">Circa.vn</span>
+                    <span>thuộc sở hữu của</span>
                     <div class="font-medium text-[#15A959]">Tập đoàn Buymed</div>
                 </div>
             </div>
+
             <span class="flex-1 flex items-center justify-end">
+                <!-- Button tư vấn miễn phí -->
                 <button type="button"
                     class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
                     name="advise">
@@ -40,10 +45,14 @@
                         </svg>
                     </i>
                     <span class="whitespace-nowrap group-hover:text-primary transition">
-                        <div class="flex items-center gap-1"><span class="whitespace-nowrap">Tư vấn miễn
-                                phí</span><strong class="font-semibold">(028) 73022068</strong></div>
+                        <div class="flex items-center gap-1">
+                            <span class="whitespace-nowrap">Tư vấn miễn phí</span>
+                            <strong class="font-semibold">(028) 73022068</strong>
+                        </div>
                     </span>
                 </button>
+
+                <!-- Button tải ứng dụng -->
                 <button type="button"
                     class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
                     data-state="closed" name="qrCode">
@@ -57,6 +66,8 @@
                     </i>
                     <span class="whitespace-nowrap group-hover:text-primary transition">Tải ứng dụng</span>
                 </button>
+
+                <!-- Link nhượng quyền -->
                 <a class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
                     target="_blank" href="nhuongquyen.html">
                     <i>
@@ -74,6 +85,8 @@
                     </i>
                     <span class="whitespace-nowrap group-hover:text-primary transition">Nhượng quyền</span>
                 </a>
+
+                <!-- Link tuyển dụng -->
                 <a class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
                     target="_blank" href="tuyendung.html">
                     <i>
@@ -86,6 +99,8 @@
                     </i>
                     <span class="whitespace-nowrap group-hover:text-primary transition">Tuyển dụng</span>
                 </a>
+
+                <!-- Link hỗ trợ -->
                 <a class="flex items-center gap-x-1 px-3 py-0.5 border-l-2 border-neutral-100 first:border-none cursor-pointer group"
                     target="_blank" href="hotro.html">
                     <i>
@@ -101,10 +116,13 @@
                 </a>
             </span>
         </div>
+
+
+
         <div class="bg-primary w-full">
             <div
-                class="grid grid-cols-[40px_1fr_40px] gap-x-9 content-center pt-1.5 pb-2 md:pt-4 md:pb-4 container md:grid-cols-[120px_1fr_340px]">
-                <!--$-->
+                class="container mx-auto grid grid-cols-3 gap-x-6 content-center pt-1.5 pb-2 md:pt-4 md:pb-4 md:grid-cols-[120px_1fr_340px]">
+                <!-- Logo -->
                 <a href="index.html">
                     <div class="mt-2">
                         <svg width="120" height="30" viewBox="0 0 120 30" fill="none"
@@ -123,218 +141,149 @@
                                     d="M48.1118 29.6378C47.584 29.6378 47.1405 29.4562 46.7802 29.0921C46.4199 28.729 46.2402 28.2797 46.2402 27.7463V3.12777C46.2402 2.56978 46.4199 2.11538 46.7802 1.76355C47.1395 1.41275 47.584 1.23633 48.1118 1.23633H54.5891C56.3886 1.23633 57.9831 1.6179 59.3746 2.38207C60.765 3.14521 61.851 4.19453 62.6305 5.52798C63.41 6.86143 63.7997 8.41336 63.7997 10.1827C63.7997 11.8321 63.41 13.2979 62.6305 14.5831C61.851 15.8684 60.765 16.8746 59.3746 17.6019C57.9831 18.3291 56.3876 18.6932 54.5891 18.6932H49.9833V27.7484C49.9833 28.2818 49.8088 28.73 49.4606 29.0941C49.1125 29.4583 48.6629 29.6398 48.1118 29.6398V29.6378ZM49.9833 15.2006H54.5891C55.6924 15.2006 56.6637 14.9883 57.504 14.5636C58.3434 14.14 59.0031 13.5451 59.4832 12.7819C59.9622 12.0188 60.2028 11.1521 60.2028 10.1817C60.2028 9.11496 59.9622 8.17026 59.4832 7.34455C59.0031 6.52089 58.3434 5.87776 57.504 5.4172C56.6637 4.95665 55.6924 4.72689 54.5891 4.72689H49.9833V15.2006ZM63.0456 29.6378C62.7097 29.6378 62.4032 29.5649 62.1281 29.4193C61.852 29.2736 61.6176 29.0439 61.4268 28.729L54.9494 18.1824L58.5839 17.128L64.4848 26.7288C64.9172 27.4325 64.976 28.092 64.6644 28.7105C64.3518 29.329 63.8119 29.6378 63.0446 29.6378H63.0456Z"
                                     fill="white"></path>
                                 <path
-                                    d="M81.577 30.0028C79.6333 30.0028 77.8166 29.6335 76.1257 28.8939C74.4348 28.1544 72.9591 27.1246 71.6996 25.8024C70.44 24.4813 69.4565 22.9355 68.7491 21.1661C68.0407 19.3967 67.6875 17.4806 67.6875 15.42C67.6875 13.3593 68.0407 11.4863 68.7491 9.72818C69.4565 7.9711 70.44 6.43148 71.6996 5.10931C72.9591 3.78817 74.4287 2.75218 76.1074 2.00032C77.7862 1.24949 79.61 0.873047 81.577 0.873047C83.4242 0.873047 85.0135 1.11614 86.3451 1.60029C87.6757 2.08546 89.0134 2.88553 90.3572 4.0005C90.549 4.14615 90.6992 4.29796 90.8068 4.4549C90.9144 4.61286 90.9865 4.7698 91.023 4.92776C91.0595 5.08572 91.0768 5.27343 91.0768 5.49088C91.0768 5.95144 90.9144 6.33403 90.5906 6.63662C90.2669 6.94024 89.8761 7.10949 89.4214 7.14539C88.9657 7.18231 88.5222 7.0305 88.0898 6.69099C87.2018 5.91554 86.2843 5.32164 85.3373 4.9093C84.3894 4.49695 83.1359 4.29078 81.577 4.29078C80.1611 4.29078 78.8295 4.58209 77.5832 5.16368C76.3358 5.74527 75.2376 6.54533 74.2907 7.56388C73.3427 8.58243 72.6049 9.76408 72.0771 11.1098C71.5493 12.4556 71.2855 13.8916 71.2855 15.4189C71.2855 16.9462 71.5493 18.4192 72.0771 19.7649C72.6049 21.1107 73.3417 22.2923 74.2907 23.3109C75.2376 24.3294 76.3358 25.1234 77.5832 25.6926C78.8305 26.2629 80.1611 26.5471 81.577 26.5471C82.8 26.5471 83.957 26.3347 85.0491 25.9111C86.1401 25.4875 87.1906 24.8987 88.1984 24.1469C88.6298 23.832 89.055 23.6925 89.4752 23.7284C89.8944 23.7653 90.2486 23.9345 90.5368 24.2382C90.8251 24.5418 90.9692 24.9603 90.9692 25.4926C90.9692 25.7357 90.9205 25.9716 90.8251 26.2014C90.7287 26.4322 90.5846 26.6445 90.3927 26.8384C89.0977 27.8815 87.7123 28.6693 86.2365 29.2027C84.7618 29.7361 83.208 30.0028 81.577 30.0028Z"
-                                    fill="white"></path>
-                                <path
-                                    d="M95.8259 29.6388C95.154 29.6388 94.6384 29.3475 94.2791 28.7659C93.9198 28.1843 93.8833 27.5658 94.1715 26.9114L104.282 2.50926C104.643 1.66098 105.229 1.23633 106.045 1.23633C106.909 1.23633 107.497 1.66098 107.808 2.50926L117.956 26.9832C118.22 27.6622 118.177 28.2736 117.83 28.8192C117.482 29.3649 116.96 29.6378 116.265 29.6378C115.904 29.6378 115.563 29.5352 115.239 29.329C114.915 29.1229 114.681 28.8377 114.537 28.4746L105.613 6.07367H106.621L97.5523 28.4746C97.3848 28.8623 97.1382 29.1536 96.8144 29.3475C96.4907 29.5414 96.1608 29.6388 95.8249 29.6388H95.8259ZM97.733 23.3839L99.1721 20.2564H113.278L114.717 23.3839H97.733Z"
+                                    d="M81.577 30.0028C79.6333 30.0028 77.8166 29.6335 76.1257 28.8939C74.4348 28.1542 73.1388 27.0828 72.2361 25.6424C71.3345 24.202 71.4335 22.5713 72.4996 21.5852C73.5657 20.599 75.2564 20.2282 76.9716 20.3561C78.1236 20.4619 78.5432 21.7167 78.1297 22.8925C77.6491 24.3585 76.8655 24.6888 75.8503 24.4549C75.024 24.2943 74.2545 24.1199 73.7497 24.4551C73.1122 24.8824 73.2055 25.4959 74.6377 25.4959C75.6966 25.4959 76.7928 25.0528 77.9253 24.2937C79.058 23.5348 80.078 22.6127 80.0586 22.6084C80.1167 22.3787 80.0535 22.1865 79.9626 22.0024C79.8716 21.8184 79.7565 21.5897 79.6073 21.3568C79.4583 21.1239 79.2709 20.897 79.0855 20.6462C78.7468 20.0945 78.5167 19.4084 78.5167 18.7576C78.5167 17.2068 79.6898 15.7902 81.577 15.7902C82.7032 15.7902 83.7275 16.3652 84.3949 17.2235C85.0623 18.0819 85.2076 19.0618 85.2076 19.9265C85.2076 21.4219 84.3973 23.0361 83.1754 23.9153C82.7034 24.2264 82.2887 24.5297 82.0495 24.7287C82.1267 24.9781 82.1953 25.2179 82.1953 25.4747C82.1953 25.892 81.8658 26.4551 81.577 26.4551C81.2145 26.4551 80.9743 26.1295 80.9743 25.4747C80.9743 25.1456 80.8661 24.8964 80.7064 24.6464C80.5468 24.3964 80.2899 24.0858 80.0517 23.9343C79.9752 23.8584 79.9194 23.8215 79.8615 23.7915C79.8035 23.7615 79.7403 23.7473 79.6775 23.7473C79.6147 23.7473 79.5608 23.7615 79.5028 23.7915C79.4449 23.8215 79.399 23.8584 79.3225 23.9343C79.0843 24.0858 78.8275 24.3964 78.6679 24.6464C78.5083 24.8964 78.4 25.1456 78.4 25.4747C78.4 26.1295 78.1599 26.4551 77.7973 26.4551C77.5085 26.4551 77.1786 25.892 77.1786 25.4747C77.1786 25.2179 77.2473 24.9781 77.3247 24.7287C77.0855 24.5297 76.6708 24.2264 76.1987 23.9153C74.9774 23.0361 74.1671 21.4219 74.1671 19.9265C74.1671 19.0618 74.3126 18.0819 74.9797 17.2235C75.6477 16.3652 76.6721 15.7902 77.7983 15.7902C79.6855 15.7902 80.8586 17.2068 80.8586 18.7576C80.8586 19.4084 80.6385 20.0945 80.2998 20.6462C80.1144 20.896 79.9271 21.1239 79.7781 21.3568C79.6287 21.5897 79.5137 21.8184 79.4227 22.0024C79.3317 22.1865 79.2685 22.3787 79.3266 22.6084C80.2872 22.6127 81.3075 23.5348 82.4408 24.2937C83.5736 25.0528 84.6693 25.4959 85.7288 25.4959C87.1609 25.4959 87.2544 24.8824 86.6174 24.4551C86.1126 24.1199 85.3431 24.2943 84.4262 24.4549C83.4113 24.6888 82.6279 24.3585 82.1473 22.8925C81.7337 21.7167 82.1531 20.4619 83.3041 20.3561C85.0193 20.2282 86.7099 20.599 87.7758 21.5852C88.8418 22.5713 88.9408 24.202 88.0384 25.6424C87.1358 27.0828 85.8398 28.1542 84.1489 28.8939C82.458 29.6335 80.6413 30.0028 78.6976 30.0028H81.577Z"
                                     fill="white"></path>
                             </g>
                             <defs>
                                 <clipPath id="clip0_831_6205">
-                                    <rect width="118.768" height="30" fill="white"></rect>
+                                    <rect width="120" height="30" fill="white"></rect>
                                 </clipPath>
                             </defs>
                         </svg>
                     </div>
                 </a>
-                <div class="space-y-2">
 
-                    <div cmdk-root="">
-                        <label cmdk-label="" for=":RcollaH2:" id=":RcollaH1:"
-                            style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;"></label>
-                        <div>
-                            <div class="flex items-center border-b px-3 bg-white rounded-full" cmdk-input-wrapper="">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="lucide lucide-search size-5 text-primary shrink-0 mr-2">
-                                    <circle cx="11" cy="11" r="8"></circle>
-                                    <path d="m21 21-4.3-4.3"></path>
-                                </svg>
-                                <input
-                                    class="flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
-                                    placeholder="Tìm kiếm tên thuốc, công dụng, thực phẩm chức năng.." cmdk-input=""
-                                    autocomplete="off" autocorrect="off" spellcheck="false" aria-autocomplete="list"
-                                    role="combobox" aria-expanded="true" aria-controls=":Rcolla:"
-                                    aria-labelledby=":RcollaH1:" id=":RcollaH2:" type="text" value="" />
-                            </div>
-                        </div>
-                        <div class="relative mt-1"></div>
+                <!-- Search Bar -->
+                <div class="space-y-2 col-span-1">
+                    <label for="search" class="sr-only">Search for coffee name</label>
+                    <div class="flex items-center border-b px-3 bg-white rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-search size-5 text-primary shrink-0 mr-2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </svg>
+                        <input id="search"
+                            class="flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground"
+                            placeholder="Tìm kiếm tên cà phê...." type="text" autocomplete="off" spellcheck="false">
                     </div>
-                    <!--/$-->
                 </div>
-                <!--/$-->
-                <div class="h-fit flex items-center mb-auto gap-x-0.5 justify-around">
+
+                <!-- Cart and Buttons -->
+                <div class="flex items-center justify-center space-x-3">
                     <button type="button" aria-label="cart-button"
-                        class="bg-white transition py-2 px-3 h-10 max-w-36 rounded-full flex items-center justify-between gap-2 hover:bg-orange-1"
-                        data-state="closed">
-                        <i class="">
+                        class="bg-white transition py-2 px-3 h-10 rounded-full flex items-center justify-between gap-2 hover:bg-orange-1">
+                        <i>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="#FB743E" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-shopping-cart">
                                 <circle cx="8" cy="21" r="1"></circle>
                                 <circle cx="19" cy="21" r="1"></circle>
                                 <path
-                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                                    d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.56l1.43-6.85H6.48">
                                 </path>
                             </svg>
                         </i>
-                        <span class="text-primary font-medium">Giỏ hàng</span>
+                        <span class="font-semibold text-primary">Giỏ hàng</span>
                     </button>
-                    <div data-orientation="vertical" role="none" class="shrink-0 bg-border w-[1px] h-6 my-1"
-                        color="white"></div>
-                    <button
-                        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed underline-offset-4 h-10 py-2 hover:underline text-white space-x-1.5 px-0"
-                        aria-label="button" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-pen">
-                            <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"></path>
-                        </svg>
-                        <span>Đăng ký</span>
-                    </button>
-                    <div data-orientation="vertical" role="none" class="shrink-0 bg-border w-[1px] h-6 my-1"
-                        color="white"></div>
-                    <button
-                        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed underline-offset-4 h-10 py-2 hover:underline text-white space-x-1.5 px-0"
-                        aria-label="button" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-user-round">
-                            <circle cx="12" cy="8" r="5"></circle>
-                            <path d="M20 21a8 8 0 0 0-16 0"></path>
-                        </svg>
-                        <span>Đăng nhập</span>
-                    </button>
+                    <a href="login.html"
+                        class="bg-primary transition py-2 px-3 h-10 rounded-full flex items-center justify-between gap-2 hover:bg-orange-1">
+                        <span class="font-semibold text-white">Đăng nhập</span>
+                    </a>
                 </div>
             </div>
         </div>
+
 
         <div class="container">
-            <nav aria-label="Main" data-orientation="horizontal" dir="ltr"
-                class="relative z-10 flex max-w-max flex-1 items-center justify-center">
-                <div style="position: relative;">
-                    <ul data-orientation="horizontal"
-                        class="group flex flex-1 list-none items-center justify-center space-x-1 gap-x-5" dir="ltr">
-                        <li class="">
-                            <a href="danhSachSanpham.html">
-                                <button id="radix-:Rclla:-trigger-radix-:Rlslla:" data-state="closed"
-                                    aria-expanded="false" aria-controls="radix-:Rclla:-content-radix-:Rlslla:"
-                                    class="group inline-flex h-10 w-max items-center justify-center bg-background py-2 text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50 group hover:text-primary hover:border-primary rounded-none HideNavigationIconTrigger text-grey-9"
-                                    data-radix-collection-item="">
-                                    Danh sách sản phẩm<!-- -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-down relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
-                                        aria-hidden="true">
-                                        <path d="m6 9 6 6 6-6"></path>
-                                    </svg>
-                                </button>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="heThongNhaThuoc.html">
-                                <button id="radix-:Rclla:-trigger-radix-:R15slla:" data-state="closed"
-                                    aria-expanded="false" aria-controls="radix-:Rclla:-content-radix-:R15slla:"
-                                    class="group inline-flex h-10 w-max items-center justify-center bg-background py-2 text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50 group hover:text-primary hover:border-primary rounded-none HideNavigationIconTrigger text-grey-9"
-                                    data-radix-collection-item="">
-                                   Hệ thống cà phê<!-- -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-chevron-down relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
-                                        aria-hidden="true">
-                                        <path d="m6 9 6 6 6-6"></path>
-                                    </svg>
-                                </button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="absolute left-0 top-full flex justify-center"></div>
-                <div class="absolute left-0 top-full flex justify-center"></div>
-            </nav>
-        </div>
-    </header>
-    <!-- Section-1 Quan -->
-    <section class="w-full relative h-[32.4375rem] py-10">
-        <img alt="Home Banner" fetchpriority="high" decoding="async" data-nimg="fill" class=""
-            style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent;"
-            src="../img/home-banner-bg.png" />
-        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 container">
-            <div class="flex items-stretch justify-between gap-x-3">
-                <div class="md:w-[900px] md:basis-[900px] shrink-0">
-                    <div
-                        class="swiper swiper-initialized swiper-horizontal overflow-hidden rounded-xl relative border-[4px] border-white shadow-md bg-white group">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-slide-active swiper-slide-next" data-swiper-slide-index="0"
-                                style="width: 892px;">
-                                <a href="index.html">
-                                    <div class="bg-white relative w-[900px] h-[300px] overflow-hidden rounded-xl">
-                                        <img alt="" fetchpriority="high" loading="eager" decoding="async"
-                                            data-nimg="fill" class="object-cover"
-                                            style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent;"
-                                            src="../img/banner-coffee2.jpg" />
-                                    </div>
+            <div class="container">
+                <nav aria-label="Main" data-orientation="horizontal" dir="ltr"
+                    class="relative z-10 flex max-w-max flex-1 items-center justify-start">
+                    <div style="position: relative;">
+                        <ul data-orientation="horizontal"
+                            class="group flex list-none items-center justify-start space-x-1 gap-x-5 navigation-list"
+                            dir="ltr">
+                            <li>
+                                <a href="danhSachSanpham.html">
+                                    <button id="radix-:Rclla:-trigger-radix-:Rlslla:" data-state="closed"
+                                        aria-expanded="false" aria-controls="radix-:Rclla:-content-radix-:Rlslla:"
+                                        class="group inline-flex h-10 w-max items-center justify-center bg-background py-2 text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50 group hover:text-primary hover:border-primary rounded-none HideNavigationIconTrigger text-grey-9"
+                                        data-radix-collection-item="">
+                                        Danh sách sản phẩm
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-chevron-down relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
+                                            aria-hidden="true">
+                                            <path d="m6 9 6 6 6-6"></path>
+                                        </svg>
+                                    </button>
                                 </a>
-                            </div>
-                        </div>
-                        <div
-                            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock">
-                            <span
-                                class="swiper-pagination-bullet !bg-white !size-2 !opacity-90 swiper-pagination-bullet-active !w-5 !h-2 !rounded-sm"></span>
-                        </div>
+                            </li>
+                            <li>
+                                <a href="heThongNhaThuoc.html">
+                                    <button id="radix-:Rclla:-trigger-radix-:R15slla:" data-state="closed"
+                                        aria-expanded="false" aria-controls="radix-:Rclla:-content-radix-:R15slla:"
+                                        class="group inline-flex h-10 w-max items-center justify-center bg-background py-2 text-sm font-medium transition-colors focus:outline-none disabled:pointer-events-none disabled:opacity-50 group hover:text-primary hover:border-primary rounded-none HideNavigationIconTrigger text-grey-9"
+                                        data-radix-collection-item="">
+                                        Hệ thống cà phê
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-chevron-down relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
+                                            aria-hidden="true">
+                                            <path d="m6 9 6 6 6-6"></path>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="flex-1 relative border-[4px] border-white rounded-xl shadow-md">
-                    <img alt="Banner" fetchpriority="high" decoding="async" data-nimg="fill"
-                        class="object-cover rounded-xl"
-                        style="position: absolute; height: 100%; width: 100%; left: 0; top: 0; right: 0; bottom: 0; color: transparent;"
-                        src="../img/caphe-trung-nguyen.jpg" />
-                </div>
+                    <div class="absolute left-0 top-full flex justify-center"></div>
+                    <div class="absolute left-0 top-full flex justify-center"></div>
+                </nav>
             </div>
-            <div class="mt-5 rounded-xl container bg-white p-3 shadow-md flex justify-between z-10">
-                <div class="flex-1">
-                    <a href="#">
-                        <div class="p-3 grid place-items-center hover:bg-blue-0 transition rounded-xl space-y-2">
-                            <div class="">
-                                <svg width="34" height="40" viewBox="0 0 34 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M27.39 3.7278C25.5037 2.18337 23.2983 1.0768 20.9326 0.487898C18.567 -0.101 16.1001 -0.157544 13.71 0.322344C10.6367 0.952417 7.80939 2.45262 5.56473 4.64425C3.32008 6.83588 1.75273 9.62656 1.04938 12.6838C0.346033 15.7411 0.536339 18.9362 1.59763 21.8884C2.65892 24.8405 4.54646 27.4254 7.0354 29.3351C9.8771 31.415 12.2966 34.0171 14.1645 37.0024L15.4372 39.1188C15.5989 39.3876 15.8273 39.61 16.1004 39.7644C16.3734 39.9188 16.6817 40 16.9954 40C17.3091 40 17.6174 39.9188 17.8905 39.7644C18.1635 39.61 18.392 39.3876 18.5536 39.1188L19.7736 37.086C21.4002 34.2267 23.618 31.7473 26.2791 29.8133C28.3656 28.3777 30.09 26.4769 31.3162 24.2608C32.5424 22.0447 33.2369 19.574 33.3448 17.0436C33.4527 14.5132 32.9711 11.9923 31.938 9.67987C30.9049 7.36744 29.3486 5.32672 27.3918 3.71871L27.39 3.7278ZM16.9936 23.6387C15.5552 23.6387 14.1491 23.2122 12.9531 22.4131C11.7571 21.6139 10.8249 20.4781 10.2745 19.1492C9.72401 17.8202 9.57998 16.3579 9.8606 14.9472C10.1412 13.5364 10.8339 12.2405 11.851 11.2234C12.8681 10.2063 14.164 9.51363 15.5748 9.23301C16.9855 8.95239 18.4478 9.09641 19.7768 9.64687C21.1057 10.1973 22.2415 11.1295 23.0407 12.3255C23.8398 13.5215 24.2663 14.9276 24.2663 16.366C24.2663 18.2948 23.5001 20.1447 22.1362 21.5086C20.7723 22.8725 18.9224 23.6387 16.9936 23.6387Z"
-                                        fill="#3652AD"></path>
-                                </svg>
-                            </div>
-                            <div class="text-link">Nhà thuốc gần đây</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="flex-1">
-                    <a href="traCuuDonHang.html">
-                        <div class="p-3 grid place-items-center hover:bg-blue-0 transition rounded-xl space-y-2">
-                            <div class="">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M31.5304 1.12383C31.1295 0.430625 30.383 0 29.5828 0H21.2188V9.89352H36.6026L31.5304 1.12383Z"
-                                        fill="#3652AD"></path>
-                                    <path
-                                        d="M18.8675 0H10.4245C9.62266 0 8.87633 0.431406 8.47539 1.12617L3.42188 9.89352H18.8674V0H18.8675Z"
-                                        fill="#3652AD"></path>
-                                    <path
-                                        d="M2.58594 12.2383V37.2437C2.58594 38.7638 3.82312 40.0002 5.3432 40.0002H34.6635C36.1836 40.0002 37.4208 38.7638 37.4208 37.2437V12.2383H2.58594ZM25.3248 22.7539L19.2616 28.8171C19.0327 29.0461 18.7325 29.161 18.4324 29.161C18.1323 29.161 17.8322 29.0461 17.604 28.8171L14.7616 25.9754C14.3044 25.5182 14.3044 24.7757 14.7616 24.3177C15.2195 23.8598 15.962 23.8598 16.42 24.3177L18.4325 26.331L23.6673 21.0963C24.1252 20.6383 24.8677 20.6383 25.3249 21.0963C25.7829 21.5542 25.7829 22.2959 25.3248 22.7539Z"
-                                        fill="#3652AD"></path>
-                                </svg>
-                            </div>
-                            <div class="text-link">Tra cứu đơn hàng</div>
-                        </div>
-                    </a>
-                </div>
+
+
+    </header>
+
+    <div id="carouselDarkVariant" class="relative" data-twe-carousel-init data-twe-ride="carousel">
+        <!-- Carousel indicators -->
+        <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+            data-twe-carousel-indicators>
+            <button data-twe-target="#carouselDarkVariant" data-twe-slide-to="0" data-twe-carousel-active
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button data-twe-target="#carouselDarkVariant" data-twe-slide-to="1"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 2"></button>
+            <button data-twe-target="#carouselDarkVariant" data-twe-slide-to="2"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 3"></button>
+        </div>
+    
+        <!-- Carousel items -->
+        <div class="relative w-full overflow-hidden">
+            <!-- First item -->
+            <div class="relative float-left -mr-[100%] w-full !transform-none opacity-100 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-twe-carousel-fade data-twe-carousel-item data-twe-carousel-active>
+                <img src="../img/banner-coffee-1.jpg" class="block w-3/4 mx-auto" alt="Motorbike Smoke" loading="lazy" />
+            </div>
+            <!-- Second item -->
+            <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-twe-carousel-fade data-twe-carousel-item>
+                <img src="../img/banner-section1.jpg" class="block w-3/4 mx-auto" alt="Mountaintop" loading="lazy" />
+            </div>
+            <!-- Third item -->
+            <div class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+                data-twe-carousel-fade data-twe-carousel-item>
+                <img src="../img/banner-coffee-1.jpg" class="block w-3/4 mx-auto" alt="Woman Reading a Book" loading="lazy" />
             </div>
         </div>
-    </section>
-
+    </div>
+    
+    
+    
     <!-- Section-2 Thinh -->
     <section class="py-10">
         <div class="flex justify-between items-stretch container z-[10]">
@@ -463,7 +412,8 @@
                                 phin và pha máy thơm ngọt hậu C5</h3>
                             <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi giấy 1000g</div>
                         </div>
-                    </a></div>
+                    </a>
+                </div>
                 <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
                     <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
                             aria-label="Xem chi tiết sản phẩm Cetaphil sữa rửa mặt gentle skin cleanser (c/125ml)"
@@ -924,152 +874,158 @@
         </div>
     </section>
 
-  
+
 
 
     <!-- end section product -->
 
 
-      <!-- section phuong -->
+    <!-- section phuong -->
     <section class="py-5 bg-gray-100">
         <div class="container d-flex gap-4">
-          <!-- Cột bên trái: Điều hướng các bước -->
-          <div class="col-md-4">
-            <div class="tab-container bg-white rounded-full shadow p-2 h-12">
-              <!-- Tab điều hướng -->
-              <button type="button" role="tab" aria-selected="true" aria-controls="content-account" id="trigger-account" class="tab-button active" tabindex="-1">
-                Các bước tạo tài khoản
-              </button>
-              <button type="button" role="tab" aria-selected="false" aria-controls="content-order" id="trigger-order" class="tab-button inactive" tabindex="-1">
-                Các bước tạo Đơn hàng
-              </button>
-            </div>
-    
-            <div class="tab-content mt-4" id="myTabContent">
-              <!-- Các bước tạo tài khoản -->
-              <div class="tab-pane fade show active" id="content-account" role="tabpanel" aria-labelledby="trigger-account">
-                <div class="bg-white rounded-lg shadow p-4">
-                  <div class="d-flex flex-column gap-3">
-                    <!-- Bước 1 -->
-                    <div class="d-flex align-items-center">
-                      <button type="button" class="step-button active" data-step="1">
-                        <div class="inner-circle"></div>
-                      </button>
-                      <div class="step-connector active mx-2"></div>
-                      <div>
-                        <h5 class="mb-0">Bước 1</h5>
-                        <p class="mb-0 text-muted">Tải ứng dụng</p>
-                      </div>
-                    </div>
-    
-                    <!-- Bước 2 -->
-                    <div class="d-flex align-items-center">
-                      <button type="button" class="step-button" data-step="2">
-                        <div class="inner-circle"></div>
-                      </button>
-                      <div class="step-connector mx-2"></div>
-                      <div>
-                        <h5 class="mb-0">Bước 2</h5>
-                        <p class="mb-0 text-muted">Nhấp chọn Đăng ký</p>
-                      </div>
-                    </div>
-    
-                    <!-- Bước 3 -->
-                    <div class="d-flex align-items-center">
-                      <button type="button" class="step-button" data-step="3">
-                        <div class="inner-circle"></div>
-                      </button>
-                      <div class="step-connector mx-2"></div>
-                      <div>
-                        <h5 class="mb-0">Bước 3</h5>
-                        <p class="mb-0 text-muted">Nhập mã xác nhận</p>
-                      </div>
-                    </div>
-    
-                    <!-- Bước 4 -->
-                    <div class="d-flex align-items-center">
-                      <button type="button" class="step-button" data-step="4">
-                        <div class="inner-circle"></div>
-                      </button>
-                      <div class="step-connector mx-2"></div>
-                      <div>
-                        <h5 class="mb-0">Bước 4</h5>
-                        <p class="mb-0 text-muted">Nhận ưu đãi đơn đầu</p>
-                      </div>
-                    </div>
-                  </div>
+            <!-- Cột bên trái: Điều hướng các bước -->
+            <div class="col-md-4">
+                <div class="tab-container bg-white rounded-full shadow p-2 h-12">
+                    <!-- Tab điều hướng -->
+                    <button type="button" role="tab" aria-selected="true" aria-controls="content-account"
+                        id="trigger-account" class="tab-button active" tabindex="-1">
+                        Các bước tạo tài khoản
+                    </button>
+                    <button type="button" role="tab" aria-selected="false" aria-controls="content-order"
+                        id="trigger-order" class="tab-button inactive" tabindex="-1">
+                        Các bước tạo Đơn hàng
+                    </button>
                 </div>
-              </div>
-    
-              <!-- Các bước tạo đơn hàng -->
-              <div class="tab-pane fade" id="content-order" role="tabpanel" aria-labelledby="trigger-order">
-                <div class="bg-white rounded-lg shadow p-4">
-                  <div class="d-flex flex-column gap-3">
-                    <!-- Bước 1 -->
-                    <div class="d-flex align-items-center">
-                      <button type="button" class="step-button" data-step="1">
-                        <div class="inner-circle"></div>
-                      </button>
-                      <div class="step-connector mx-2"></div>
-                      <div>
-                        <h5 class="mb-0">Bước 1</h5>
-                        <p class="mb-0 text-muted">Chọn sản phẩm</p>
-                      </div>
-                    </div>
-    
-                    <!-- Bước 2 -->
-                    <div class="d-flex align-items-center">
-                      <button type="button" class="step-button" data-step="2">
-                        <div class="inner-circle"></div>
-                      </button>
-                      <div class="step-connector mx-2"></div>
-                      <div>
-                        <h5 class="mb-0">Bước 2</h5>
-                        <p class="mb-0 text-muted">Thêm vào giỏ hàng</p>
-                      </div>
-                    </div>
-    
-                    <!-- Bước 3 -->
-                    <div class="d-flex align-items-center">
-                      <button type="button" class="step-button" data-step="3">
-                        <div class="inner-circle"></div>
-                      </button>
-                      <div class="step-connector mx-2"></div>
-                      <div>
-                        <h5 class="mb-0">Bước 3</h5>
-                        <p class="mb-0 text-muted">Nhập thông tin giao hàng</p>
-                      </div>
-                    </div>
-    
-                    <!-- Bước 4 -->
-                    <div class="d-flex align-items-center">
-                      <button type="button" class="step-button" data-step="4">
-                        <div class="inner-circle"></div>
-                      </button>
-                      <div class="step-connector mx-2"></div>
-                      <div>
-                        <h5 class="mb-0">Bước 4</h5>
-                        <p class="mb-0 text-muted">Xác nhận đơn hàng</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Cột bên phải: Hình ảnh và nội dung mô tả -->
-          <div class="col-md-8 position-relative">
-            <img id="step-image" src="../img/account-step-1.png" alt="Tải ứng dụng" class="w-100 h-100 object-cover rounded-xl">
-            <div id="info-overlay" class="position-absolute top-50 start-50 translate-middle text-center text-dark hidden">
-              <h4 id="step-title" class="text-primary mb-3">Bước 1</h4>
-              <p id="step-description">Tìm kiếm <span class="fw-bold">Nhà thuốc Circa by Buymed</span> trên <span class="fw-bold">CH Play</span> hoặc <span class="fw-bold">App Store</span> để tải xuống</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-<!-- end section phuong-->
+                <div class="tab-content mt-4" id="myTabContent">
+                    <!-- Các bước tạo tài khoản -->
+                    <div class="tab-pane fade show active" id="content-account" role="tabpanel"
+                        aria-labelledby="trigger-account">
+                        <div class="bg-white rounded-lg shadow p-4">
+                            <div class="d-flex flex-column gap-3">
+                                <!-- Bước 1 -->
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="step-button active" data-step="1">
+                                        <div class="inner-circle"></div>
+                                    </button>
+                                    <div class="step-connector active mx-2"></div>
+                                    <div>
+                                        <h5 class="mb-0">Bước 1</h5>
+                                        <p class="mb-0 text-muted">Tải ứng dụng</p>
+                                    </div>
+                                </div>
+
+                                <!-- Bước 2 -->
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="step-button" data-step="2">
+                                        <div class="inner-circle"></div>
+                                    </button>
+                                    <div class="step-connector mx-2"></div>
+                                    <div>
+                                        <h5 class="mb-0">Bước 2</h5>
+                                        <p class="mb-0 text-muted">Nhấp chọn Đăng ký</p>
+                                    </div>
+                                </div>
+
+                                <!-- Bước 3 -->
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="step-button" data-step="3">
+                                        <div class="inner-circle"></div>
+                                    </button>
+                                    <div class="step-connector mx-2"></div>
+                                    <div>
+                                        <h5 class="mb-0">Bước 3</h5>
+                                        <p class="mb-0 text-muted">Nhập mã xác nhận</p>
+                                    </div>
+                                </div>
+
+                                <!-- Bước 4 -->
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="step-button" data-step="4">
+                                        <div class="inner-circle"></div>
+                                    </button>
+                                    <div class="step-connector mx-2"></div>
+                                    <div>
+                                        <h5 class="mb-0">Bước 4</h5>
+                                        <p class="mb-0 text-muted">Nhận ưu đãi đơn đầu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Các bước tạo đơn hàng -->
+                    <div class="tab-pane fade" id="content-order" role="tabpanel" aria-labelledby="trigger-order">
+                        <div class="bg-white rounded-lg shadow p-4">
+                            <div class="d-flex flex-column gap-3">
+                                <!-- Bước 1 -->
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="step-button" data-step="1">
+                                        <div class="inner-circle"></div>
+                                    </button>
+                                    <div class="step-connector mx-2"></div>
+                                    <div>
+                                        <h5 class="mb-0">Bước 1</h5>
+                                        <p class="mb-0 text-muted">Chọn sản phẩm</p>
+                                    </div>
+                                </div>
+
+                                <!-- Bước 2 -->
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="step-button" data-step="2">
+                                        <div class="inner-circle"></div>
+                                    </button>
+                                    <div class="step-connector mx-2"></div>
+                                    <div>
+                                        <h5 class="mb-0">Bước 2</h5>
+                                        <p class="mb-0 text-muted">Thêm vào giỏ hàng</p>
+                                    </div>
+                                </div>
+
+                                <!-- Bước 3 -->
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="step-button" data-step="3">
+                                        <div class="inner-circle"></div>
+                                    </button>
+                                    <div class="step-connector mx-2"></div>
+                                    <div>
+                                        <h5 class="mb-0">Bước 3</h5>
+                                        <p class="mb-0 text-muted">Nhập thông tin giao hàng</p>
+                                    </div>
+                                </div>
+
+                                <!-- Bước 4 -->
+                                <div class="d-flex align-items-center">
+                                    <button type="button" class="step-button" data-step="4">
+                                        <div class="inner-circle"></div>
+                                    </button>
+                                    <div class="step-connector mx-2"></div>
+                                    <div>
+                                        <h5 class="mb-0">Bước 4</h5>
+                                        <p class="mb-0 text-muted">Xác nhận đơn hàng</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cột bên phải: Hình ảnh và nội dung mô tả -->
+            <div class="col-md-8 position-relative">
+                <img id="step-image" src="../img/account-step-1.png" alt="Tải ứng dụng"
+                    class="w-100 h-100 object-cover rounded-xl">
+                <div id="info-overlay"
+                    class="position-absolute top-50 start-50 translate-middle text-center text-dark hidden">
+                    <h4 id="step-title" class="text-primary mb-3">Bước 1</h4>
+                    <p id="step-description">Tìm kiếm <span class="fw-bold">Nhà thuốc Circa by Buymed</span> trên <span
+                            class="fw-bold">CH Play</span> hoặc <span class="fw-bold">App Store</span> để tải xuống</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end section phuong-->
     <!-- Star section new product -->
 
     <section class="py-10 relative bg-[url('../img/home-new-products-bg.png')] bg-center bg-cover bg-no-repeat">
@@ -1111,8 +1067,8 @@
                 <div class="absolute -bottom-0 left-0 w-full h-0.5 bg-primary rounded-full"></div>
             </div>
             <div class="flex-1 px-5 py-4 relative"><a
-                    class="flex justify-end gap-x-2 items-center text-primary hover:underline"
-                    href=""><span class="font-medium">Xem
+                    class="flex justify-end gap-x-2 items-center text-primary hover:underline" href=""><span
+                        class="font-medium">Xem
                         thêm</span><i><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="lucide lucide-chevron-right ">
@@ -1143,12 +1099,12 @@
                             <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
                                     alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
                                     decoding="async" data-nimg="1" class="object-contain aspect-square"
-                                    style="color:transparent"
-                                    src="../img/caphe-trung-nguyen.jpg">
+                                    style="color:transparent" src="../img/caphe-trung-nguyen.jpg">
                             </div>
                         </div>
                         <div class="mb-2 mx-3">
-                            <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
+                            <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">
+                                Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
                             <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
                         </div>
                     </a>
@@ -1156,8 +1112,7 @@
                 <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
                     <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
                             aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-                            class="grow-0 block w-5/6"
-                            href="#">
+                            class="grow-0 block w-5/6" href="#">
                             <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
                         </a><button
                             class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
@@ -1170,237 +1125,236 @@
                 </div>
             </div>
             <div
-            class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
-            <div class="p-0">
-                <div
-                    class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
-                    <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
-                </div><button
-                    class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
-                    aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                        viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
-                        stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
-                        <path
-                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
-                        </path>
-                    </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-                    href="#">
-                    <div class="relative">
-                        <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
-                                alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
-                                decoding="async" data-nimg="1" class="object-contain aspect-square"
-                                style="color:transparent"
-                                src="../img/caphe-trung-nguyen.jpg">
-                        </div>
-                    </div>
-                    <div class="mb-2 mx-3">
-                        <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
-                        <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
-                    </div>
-                </a>
-            </div>
-            <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
-                <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
-                        aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-                        class="grow-0 block w-5/6"
+                class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
+                <div class="p-0">
+                    <div
+                        class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
+                        <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
+                    </div><button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
+                        aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                            viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
                         href="#">
-                        <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
-                    </a><button
-                        class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
-                        aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                            viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
-                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5v14"></path>
-                        </svg></button></div>
+                        <div class="relative">
+                            <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
+                                    alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
+                                    decoding="async" data-nimg="1" class="object-contain aspect-square"
+                                    style="color:transparent" src="../img/caphe-trung-nguyen.jpg">
+                            </div>
+                        </div>
+                        <div class="mb-2 mx-3">
+                            <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">
+                                Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
+                            <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
+                    <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
+                            aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
+                            class="grow-0 block w-5/6" href="#">
+                            <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
+                        </a><button
+                            class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
+                            aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5v14"></path>
+                            </svg></button></div>
+                </div>
             </div>
-        </div><div
-        class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
-        <div class="p-0">
             <div
-                class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
-                <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
-            </div><button
-                class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
-                aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                    viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
-                    <path
-                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
-                    </path>
-                </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-                href="#">
-                <div class="relative">
-                    <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
-                            alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
-                            decoding="async" data-nimg="1" class="object-contain aspect-square"
-                            style="color:transparent"
-                            src="../img/caphe-trung-nguyen.jpg">
-                    </div>
+                class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
+                <div class="p-0">
+                    <div
+                        class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
+                        <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
+                    </div><button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
+                        aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                            viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
+                        href="#">
+                        <div class="relative">
+                            <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
+                                    alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
+                                    decoding="async" data-nimg="1" class="object-contain aspect-square"
+                                    style="color:transparent" src="../img/caphe-trung-nguyen.jpg">
+                            </div>
+                        </div>
+                        <div class="mb-2 mx-3">
+                            <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">
+                                Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
+                            <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
+                        </div>
+                    </a>
                 </div>
-                <div class="mb-2 mx-3">
-                    <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
-                    <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
-                </div>
-            </a>
-        </div>
-        <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
-            <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
-                    aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-                    class="grow-0 block w-5/6"
-                    href="#">
-                    <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
-                </a><button
-                    class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
-                    aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                        viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
-                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5v14"></path>
-                    </svg></button></div>
-        </div>
-    </div><div
-    class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
-    <div class="p-0">
-        <div
-            class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
-            <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
-        </div><button
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
-            aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
-                stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
-                <path
-                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
-                </path>
-            </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-            href="#">
-            <div class="relative">
-                <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
-                        alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
-                        decoding="async" data-nimg="1" class="object-contain aspect-square"
-                        style="color:transparent"
-                        src="../img/caphe-trung-nguyen.jpg">
+                <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
+                    <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
+                            aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
+                            class="grow-0 block w-5/6" href="#">
+                            <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
+                        </a><button
+                            class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
+                            aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5v14"></path>
+                            </svg></button></div>
                 </div>
             </div>
-            <div class="mb-2 mx-3">
-                <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
-                <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
+            <div
+                class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
+                <div class="p-0">
+                    <div
+                        class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
+                        <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
+                    </div><button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
+                        aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                            viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
+                        href="#">
+                        <div class="relative">
+                            <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
+                                    alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
+                                    decoding="async" data-nimg="1" class="object-contain aspect-square"
+                                    style="color:transparent" src="../img/caphe-trung-nguyen.jpg">
+                            </div>
+                        </div>
+                        <div class="mb-2 mx-3">
+                            <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">
+                                Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
+                            <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
+                    <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
+                            aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
+                            class="grow-0 block w-5/6" href="#">
+                            <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
+                        </a><button
+                            class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
+                            aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5v14"></path>
+                            </svg></button></div>
+                </div>
             </div>
-        </a>
-    </div>
-    <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
-        <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
-                aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-                class="grow-0 block w-5/6"
-                href="#">
-                <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
-            </a><button
-                class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
-                aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                    viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
-                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5v14"></path>
-                </svg></button></div>
-    </div>
-</div><div
-class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
-<div class="p-0">
-    <div
-        class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
-        <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
-    </div><button
-        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
-        aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-            viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
-            stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
-            <path
-                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
-            </path>
-        </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-        href="#">
-        <div class="relative">
-            <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
-                    alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
-                    decoding="async" data-nimg="1" class="object-contain aspect-square"
-                    style="color:transparent"
-                    src="../img/caphe-trung-nguyen.jpg">
+            <div
+                class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
+                <div class="p-0">
+                    <div
+                        class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
+                        <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
+                    </div><button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
+                        aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                            viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
+                        href="#">
+                        <div class="relative">
+                            <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
+                                    alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
+                                    decoding="async" data-nimg="1" class="object-contain aspect-square"
+                                    style="color:transparent" src="../img/caphe-trung-nguyen.jpg">
+                            </div>
+                        </div>
+                        <div class="mb-2 mx-3">
+                            <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">
+                                Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
+                            <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
+                    <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
+                            aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
+                            class="grow-0 block w-5/6" href="#">
+                            <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
+                        </a><button
+                            class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
+                            aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5v14"></path>
+                            </svg></button></div>
+                </div>
             </div>
-        </div>
-        <div class="mb-2 mx-3">
-            <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
-            <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
-        </div>
-    </a>
-</div>
-<div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
-    <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
-            aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-            class="grow-0 block w-5/6"
-            href="#">
-            <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
-        </a><button
-            class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
-            aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
-                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
-                <path d="M5 12h14"></path>
-                <path d="M12 5v14"></path>
-            </svg></button></div>
-</div>
-</div><div
-class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
-<div class="p-0">
-    <div
-        class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
-        <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
-    </div><button
-        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
-        aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-            viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
-            stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
-            <path
-                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
-            </path>
-        </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-        href="#">
-        <div class="relative">
-            <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
-                    alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
-                    decoding="async" data-nimg="1" class="object-contain aspect-square"
-                    style="color:transparent"
-                    src="../img/caphe-trung-nguyen.jpg">
+            <div
+                class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overflow-hidden w-full max-w-[204px] flex flex-col gap-1.5 justify-between hover:border-orange-6 transition hover:shadow-lg hover:shadow-orange-6/20">
+                <div class="p-0">
+                    <div
+                        class="inline-flex items-center border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-blue-700 text-white text-2xs leading-relaxed z-10 absolute -top-4 !py-3 !px-5 -left-4 shadow rounded-2xl">
+                        <div class="translate-y-2 translate-x-1.5 uppercase text-white">new</div>
+                    </div><button
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-full text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-accent hover:text-accent-foreground size-5 absolute z-10 top-2 right-2"
+                        aria-label="add wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                            viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1.7142857142857142"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-heart hover:text-orange-6" style="color:#C0C0C0">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg></button><a aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
+                        href="#">
+                        <div class="relative">
+                            <div class="size-[140px] mx-auto flex justify-center items-center pb-1 mt-2.5"><img
+                                    alt="Dầu gió Nhị Thiên Đường (H/10c/1.5ml)" loading="eager" width="105" height="105"
+                                    decoding="async" data-nimg="1" class="object-contain aspect-square"
+                                    style="color:transparent" src="../img/caphe-trung-nguyen.jpg">
+                            </div>
+                        </div>
+                        <div class="mb-2 mx-3">
+                            <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">
+                                Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
+                            <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
+                    <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
+                            aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
+                            class="grow-0 block w-5/6" href="#">
+                            <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
+                        </a><button
+                            class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
+                            aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
+                                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5v14"></path>
+                            </svg></button></div>
+                </div>
             </div>
-        </div>
-        <div class="mb-2 mx-3">
-            <h3 class="tracking-tight line-clamp-2 font-medium !leading-[1.1rem] text-sm text-grey-10">Caphe Trung Nguyên Sáng Tạo 4 Loại 340gr (Loại ĐẶC BIỆT)</h3>
-            <div class="text-muted-foreground mt-0.5 line-clamp-1 text-xs">Túi 340gr</div>
-        </div>
-    </a>
-</div>
-<div class="flex p-0 flex-col items-end justify-end h-[40px] mx-3">
-    <div class="flex flex-1 w-full justify-between items-end gap-x-2"><a
-            aria-label="Xem chi tiết sản phẩm Dầu gió Nhị Thiên Đường (H/10c/1.5ml)"
-            class="grow-0 block w-5/6"
-            href="#">
-            <div class="text-base font-medium text-grey-10 w-full text-pretty">125.000</div>
-        </a><button
-            class="items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:bg-a2 disabled:pointer-events-none disabled:opacity-50 disabled:text-white disabled:cursor-not-allowed hover:bg-primary/90 size-7 absolute right-3 bottom-3 grow-0 shrink-0 grid place-items-center bg-orange-6 text-white rounded-full"
-            aria-label="add cart"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6363636363636365"
-                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus ">
-                <path d="M5 12h14"></path>
-                <path d="M12 5v14"></path>
-            </svg></button></div>
-</div>
-</div>
-           
+
         </div>
     </section>
 
@@ -1568,8 +1522,9 @@ class="border bg-card text-card-foreground relative rounded-xl py-3 shadow overf
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 
 </body>
 
