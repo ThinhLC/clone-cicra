@@ -176,7 +176,50 @@
     function updateSteps(tabId) {
       const steps = document.querySelectorAll(`#${tabId} .step-button`);
       const stepInfo = {
-        
+        account: {
+          1: {
+            image: '/clone-cicra/Home/img/account-step-1.png',
+            title: 'Bước 1',
+            description: 'Tìm kiếm <span class="fw-bold">Nhà thuốc Circa by Buymed</span> trên <span class="fw-bold">CH Play</span> hoặc <span class="fw-bold">App Store</span> để tải xuống'
+          },
+          2: {
+            image: '/clone-cicra/Home/img/account-step-2.png',
+            title: 'Bước 2',
+            description: 'Nhấp chọn Đăng ký và điền thông tin yêu cầu.'
+          },
+          3: {
+            image: '/clone-cicra/Home/img/account-step-3.png',
+            title: 'Bước 3',
+            description: 'Nhập mã xác nhận được gửi đến điện thoại của bạn.'
+          },
+          4: {
+            image: '/clone-cicra/Home/img/account-step-4.png',
+            title: 'Bước 4',
+            description: 'Nhận ưu đãi đơn đầu và hoàn tất đăng ký.'
+          }
+        },
+        order: {
+          1: {
+            image: '/clone-cicra/Home/img/order-step-1.png',
+            title: 'Bước 1',
+            description: 'Chọn sản phẩm bạn muốn mua.'
+          },
+          2: {
+            image: '/clone-cicra/Home/img/order-step-2.png',
+            title: 'Bước 2',
+            description: 'Thêm sản phẩm vào giỏ hàng.'
+          },
+          3: {
+            image: '/clone-cicra/Home/img/order-step-3.png',
+            title: 'Bước 3',
+            description: 'Nhập thông tin giao hàng của bạn.'
+          },
+          4: {
+            image: '/clone-cicra/Home/img/order-step-4.png',
+            title: 'Bước 4',
+            description: 'Xác nhận đơn hàng và hoàn tất quá trình mua hàng.'
+          }
+        }   
       };
 
       steps.forEach((step, index) => {
